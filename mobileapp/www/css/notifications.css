@@ -1,0 +1,228 @@
+/*
+	==========================================================
+	==========================================================
+	== NOTIFICATIONS
+*/
+
+
+#state-notifications .datatable .body {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#state-notifications .datatable .r {
+	width: 100%;
+	height: 65px;
+	line-height: 65px;
+	border-bottom: 1px solid rgb(208,209,214);
+	opacity: 1;
+	
+	-webkit-transition: all ease 0.25s;
+	-moz-transition:all ease 0.25s;
+	-o-transition:all ease 0.25s;
+	transition:all ease 0.25s;
+}
+
+#state-notifications .datatable .r.hiding {
+	opacity: 0;
+	height: 0px;
+}
+
+
+#state-notifications .datatable .r > div {
+	display: inline-block;
+	box-sizing: border-box;
+}
+
+#state-notifications .datatable .inner-r {
+	font-size: 12px;
+}
+
+#state-notifications .datatable .r .subtitle {
+	font-size: 8px;
+	color:rgb(123,124,127);
+	padding-left: 6px;
+}
+
+.datatable .r.expired {
+	background-color:rgb(238,238,237);
+}
+
+#state-notifications .r.expired .orderType {
+	color:rgb(186,188,192);
+}
+
+#state-notifications .datatable .circle {
+	width: 35px;
+	height: 35px;
+	border-radius: 18px;
+	display: inline-block;
+	line-height:35px;
+	text-align:center;
+
+	background-color:rgb(150,191,72);
+	font-size:7px;
+	color: white;
+}
+
+#state-notifications .datatable .circle i {
+	font-size: 18px;
+	text-align: center;
+	line-height: 35px;
+	left: 1px;
+	top: 1px;
+	position: relative;
+}
+
+#state-notifications .datatable .r.expired .circle i {
+	left: 0px;
+	top: 0px;
+	position: relative;
+}
+
+
+#state-notifications .datatable .circle.trade {
+	background-color:rgb(150,191,72);
+	color: rgb(255,255,255);
+}
+
+#state-notifications .datatable .r.expired .circle {
+	background-color:rgb(186,188,192);
+}
+
+
+
+
+
+#state-notifications .datatable .orderType {
+	width: 18%;
+	padding-left: 15px;
+	color:rgb(150,191,71);
+	text-transform: uppercase;
+}
+
+
+
+
+#state-notifications .datatable .notifyValue {
+	width: 40%;
+}
+
+#state-notifications .datatable .notifyValue .value-container {
+	position: relative;
+	top: 8px;
+}
+
+#state-notifications .datatable .notifyValue .value-container > div {
+	display: block;
+}
+
+#state-notifications .datatable .notifyValue .holdingName {
+	line-height: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#state-notifications .datatable .notifyValue .ticker {
+	font-size:16px;
+	font-family: 'open-bold';
+}
+
+#state-notifications .datatable .notifyValue .subtext {
+	padding-left: 3px;
+	font-size: 9px;
+	line-height: 10px;
+	color:rgb(122,123,127);
+	text-align:right;	
+}
+
+#state-notifications .datatable .notifyValue .trade {
+	font-family: 'Lato', sans-serif;
+	font-size:12px;
+	line-height: 18px;
+	font-weight:900;
+	color:rgb(93,94,96);
+	text-align:left;
+}
+
+
+
+
+
+
+#state-notifications .datatable .notifyName > div {
+	display: inline-block;
+}
+
+#state-notifications .datatable .notifyExpiration {
+	width: 39%;
+	padding-right: 10px;
+	text-decoration: none;
+	display: inline-block;
+	float: none !important;
+}
+
+#state-notifications .datatable .notifyExpiration > div {
+	display: inline-block;
+}
+
+
+
+
+#state-notifications .datatable .detailInfo .ticker {
+	margin-left: 5px;
+	font-size: 12px;
+	line-height: 14px;
+	color: rgb(67,134,191);
+}
+
+#state-notifications .datatable .detailInfo .name {
+	margin-left: 5px;
+	font-size: 7px;
+	line-height: 9px;
+	color: rgb(119,119,119);
+	
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+
+#state-notifications .datatable .notifyExpiration .detailInfo {
+	width: 65%;
+	position: relative;
+	top: 4px;
+}
+
+#state-notifications .datatable .expired .notifyExpiration .detailInfo {
+	top: -2px;
+}
+
+#state-notifications .datatable .detailInfo .expireDet {
+	margin-right: 7px;
+	font-size:8px;
+	line-height: 13px;
+	color:rgb(123,124,127);
+}
+
+#state-notifications .datatable .detailInfo .expiresIn {
+	font-family: 'Lato', sans-serif;
+	margin-right: 7px;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 13px;
+	color:rgb(122,123,127);
+}
+
+#state-notifications .datatable .detailInfo .soon {
+	color:rgb(184,94,128);
+}
+
+
+/*
+	== // notifications
+	==========================================================
+	==========================================================
+*/

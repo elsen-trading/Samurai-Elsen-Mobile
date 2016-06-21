@@ -1,0 +1,138 @@
+
+<!-- 
+	Create tabs with an icon and label, using the tabs-positive style. 
+	Each tab's child <ion-nav-view> directive will have its own 
+	navigation history that also transitions its views in and out.
+-->
+
+<ion-side-menus>
+	
+	<!-- include the side menu content -->
+	<ion-side-menu-content ng-controller="NotificationQuantityCtrl">
+		<ion-tabs class="tabs-icon-top tabs-default" ng-disabled="portfolioTimeSeriesCount == 0" ng-class="{missing: missing == true}">
+			<!-- Portfolio Tab -->
+			<ion-tab title="PORTFOLIO" icon="portfolio" href="#/tab/portfolio">
+				<ion-nav-view name="portfolio-tab"></ion-nav-view>
+			</ion-tab>	
+			
+			<!-- Notifications Tab -->
+			<ion-tab id="1" data-position="center1" title="NOTIFICATIONS" icon="notifications" href="#/tab/notifications" badge="notificationQuantity | number:0" badge-style="badge-notifications">
+				<ion-nav-view id="2" data-position="center2" name="notifications-tab"></ion-nav-view>
+			</ion-tab>
+			
+			<!-- Activity Tab -->
+			<ion-tab title="ACTIVITY" icon="activity" href="#/tab/activity">
+				<ion-nav-view name="activity-tab"></ion-nav-view>
+			</ion-tab>
+
+			<!-- Activity Tab -->
+			<ion-tab title="MISSING" icon="missing" href="#/tab/missing">
+				<ion-nav-view name="missing-tab"></ion-nav-view>
+			</ion-tab>
+			
+			<stupid-tab></stupid-tab>
+			
+		</ion-tabs>
+	</ion-side-menu-content>
+	
+	<ion-side-menu side="right">
+	
+<!--
+		<ion-header-bar class="bar-dark">
+			<h1 class="title">ACCOUNT SETTINGS</h1>
+		</ion-header-bar>
+-->
+	
+		<ion-content has-header="true" has-tabs="false" padding="false" scroll="true" overflow-scroll="true">
+		
+<!--
+			<ion-list>
+				<ion-item ng-click="goTo( 'home' )">PAUSE NOTIFICATIONS</ion-item>
+				<ion-item ng-click="goTo( 'home' )">SHARE THIS STRATEGY</ion-item>
+				<ion-item ng-click="goTo( 'about' )">LOGOUT</ion-item>
+			</ion-list>
+-->
+
+			<ul>
+				<li ng-hide="missing"><a ng-click="adjustNotificationSettings( !hasLive )">
+					<div class="container-fluid">
+						<div class="row">
+						
+							<div class="col-xs-10 left">
+								<span class="nav-text">{{ hasLive == true ? 'PAUSE' : 'TURN ON' }} NOTIFICATIONS</span>
+							</div>
+							<div class="col-xs-2 center">
+								<i ng-class="hasLive == true ? 'fa-pause' : 'fa-play'" class="f4 fa"></i>
+							</div>
+							
+						</div>
+					</div>
+				</a></li>
+				
+<!--
+				<li><a href="#">
+					<div class="container-fluid">
+						<div class="row">
+						
+							<div class="col-xs-10 left">
+								<span class="nav-text">Share This Strategy</span>
+							</div>
+							<div class="col-xs-2 center">
+								<i class="f4 fa fa-share"></i>
+							</div>
+							
+						</div>
+					</div>
+				</a></li>
+-->
+				
+				<li><a href="mailto:hello@elsen.co">
+					<div class="container-fluid">
+						<div class="row">
+						
+							<div class="col-xs-10 left">
+								<span class="nav-text">EMAIL US</span>
+							</div>
+							<div class="col-xs-2 center">
+								<i class="f4 fa fa-envelope-o"></i>
+							</div>
+							
+						</div>
+					</div>
+				</a></li>
+				
+				<li><a href="tel:6197290731">
+					<div class="container-fluid">
+						<div class="row">
+						
+							<div class="col-xs-10 left">
+								<span class="nav-text">CALL ELSEN SUPPORT</span>
+							</div>
+							<div class="col-xs-2 center">
+								<i class="f4 fa fa-phone"></i>
+							</div>
+							
+						</div>
+					</div>
+				</a></li>
+				
+				<li><a ng-click="logout()">
+					<div class="container-fluid">
+						<div class="row">
+						
+							<div class="col-xs-10 left">
+								<span class="nav-text">Logout</span>
+							</div>
+							<div class="col-xs-2 center">
+								<i class="f4 fa fa-sign-out"></i>
+							</div>
+							
+						</div>
+					</div>
+				</a></li>
+			</ul>
+			
+			
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

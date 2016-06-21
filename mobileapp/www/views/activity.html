@@ -1,0 +1,38 @@
+
+<!--
+	This template loads for the 'tab.activity' state (app.js)
+-->
+
+<ion-view title="<span class='sub'>ACTIVITY STREAM</span><span class='main-text'>ALL ACTIVITY" id="state-activity">
+
+	<!-- include the side button -->
+	<ion-nav-buttons side="right">
+		<button class="button-icon button-clear ion-navicon" ng-click="toggleRightSideMenu()"></button>
+	</ion-nav-buttons>
+
+	<!-- our primary content block for the view -->
+	<ion-content has-header="true" has-tabs="true" padding="false">
+
+		<!-- zero-state - show if no executions -->
+		<div ng-show="activity.length == 0" class="zero-state">
+			<div class="img"></div>
+			<div class="title">No Recent Activity</div>
+			<div class="text">Here’s where you can see all of your historical trading activity.</div>
+		</div>
+
+		<!-- list of activity - use template injections for buy or sell -->
+		<div id="" class="container-fluid">
+			<div id="notificationsTable" class="row datatable">
+				<ul class="body">
+					<li class="r" ng-repeat="action in activity | orderBy:'executedtime':true" ng-include="getActivityTemplate( action.action )" data-trade-action="{{ action.action }}"></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!-- I have no idea why this is needed -->
+		<div style="color:white;">
+			{{ dummy }}
+		</div>
+		
+	</ion-content>
+</ion-view>

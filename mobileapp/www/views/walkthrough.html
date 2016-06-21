@@ -1,0 +1,165 @@
+
+<!--
+	This template loads for the 'tab.walkthrough' state (app.js)
+-->
+
+<ion-view title="Walkthrough" id="state-walkthrough" hide-nav-bar="true">
+	<ion-content has-tabs="false" padding="false" scroll="false" overflow-scroll="false">
+		
+		<ion-slide-box id="contents" on-slide-changed="slideChanged(index)">
+
+			<ion-slide class="green-walkthrough">
+				<span class="gradient"></span>
+				<div class="content">
+					<div class="elsen-logo"></div>
+					<div class="initial-title">
+						Become a Trading Machine
+					</div>
+				</div>
+				<div class="initial-text">
+					Swipe to begin >
+				</div>
+			</ion-slide>
+		
+			<ion-slide class="green-walkthrough">
+				<div class="content">
+					<div class="title">
+						It’s like having a thousand pair of eyes watching the stock market for you
+					</div>
+					<div class="img-1"></div>
+					<div class="text">
+						Focus on what matters:<br><i style="font-style: italic;">making decisions</i>
+					</div>
+				</div>
+			</ion-slide>
+
+			<ion-slide class="green-walkthrough">
+				<span class="gradient"></span>
+				<div class="content">
+					<div class="title">
+						Receive real-time push notifications on when to buy and sell
+					</div>
+					<div class="img-2"></div>
+					<div class="text">
+						Elsen automatically identifies the best opportunities
+					</div>
+				</div>
+			</ion-slide>		
+
+			<ion-slide class="green-walkthrough">
+				<span class="gradient"></span>
+				<div class="content">
+					<div class="title">
+						Place trades and monitor your activity from the convenience of your mobile device
+					</div>
+					<div class="img-3"></div>
+				</div>
+			</ion-slide>
+			
+			<ion-slide class="white-walkthrough">
+			
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xs-12 welcome-title center">
+							Hello.
+						</div>
+						<div class="col-xs-12 welcome-message center">
+							{{ welcome }}
+						</div>
+					</div>
+				</div>
+				
+				<div id="login-container">
+				
+					<div id="social-login-container" class="container-fluid">
+						<div class="row">					
+							<div class="center col-xs-12">
+								<span class="social facebook" ng-click="facebookLogin()"></span>
+								<span class="social google" ng-click="googleLogin()"></span>
+								<!-- <a class="social twitter" href="/auth/twitter"></a> -->
+								<span class="social linkedin" ng-click="linkedinLogin()"></span>
+							</div>
+						</div>
+					</div>
+					
+					<div id="manual-login-container" class="container-fluid">
+					
+						<div id="" class="row">
+							<div class="center col-xs-10 col-xs-offset-1">
+												
+								<form id="login-form" class="lg-bottom-spacer">
+								    
+								    <div ng-if="errorText !== undefined" class="alert alert-danger">{{ errorText }}</div>
+								    
+									<span class="input-user-icon">
+										<input type="text" autocapitalize="off" autocorrect="off" placeholder="Email or Username" name="email" id="user-tf" ng-model="user.email">
+									</span>
+									<span class="input-password-icon">
+										<input type="password" placeholder="Password" name="password" id="pass-tf" ng-model="user.password">
+									</span>
+									<div ng-click="login(user)" class="login">Log in</div>
+									
+								</form>
+								
+								<a id="forgot-password" class="forgot" href="#/forgot">Forgot your details?</a>
+							</div>
+						</div>
+									
+					</div>
+					
+				</div>
+								
+			</ion-slide>
+			
+		</ion-slide-box>
+
+<!--
+        <ion-nav-buttons side="left">
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="startApp()" ng-if="!slideIndex">
+            Skip Intro
+          </button>
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="previous()" ng-if="slideIndex > 0">
+            Previous Slide
+          </button>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right"> 
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="next()" ng-if="slideIndex != 2">
+            Next
+          </button>
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="startApp()" ng-if="slideIndex == 2">
+            Start using MyApp
+          </button>
+        </ion-nav-buttons>
+
+
+		<div ng-click="previous()"></div>
+
+		<div ng-click="next()"></div>
+-->
+
+		<div id="footer-2" class="bar bar-footer" ng-class="activeFooter">
+			<div class="container-fluid" style="width:100%;">
+				
+				<div id="" class="row">
+					<div class="center col-xs-10 col-xs-offset-1">
+						<button ng-click="toSignup()" class="signup-btn button button-clear pull-right">Sign up</button>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<div id="footer-1" class="bar bar-footer" ng-class="activeFooter">
+			<button ng-click="toLogin()" class="login-btn button button-clear pull-left">Log in</button>
+			<button ng-click="toSignup()" class="signup-btn button button-clear pull-right">Sign up</button>
+		</div>
+
+
+		
+	</ion-content>
+	
+</ion-view>

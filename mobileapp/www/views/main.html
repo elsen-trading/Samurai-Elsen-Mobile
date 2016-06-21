@@ -1,0 +1,33 @@
+<ion-side-menus>
+	<ion-pane side-menu-content>
+		<!-- 
+			The nav bar that will be updated as we navigate between views
+			Additional attributes set its look, ion-nav-bar animation and icons
+			Icons provided by Ionicons: http://ionicons.com/
+		-->
+		<ion-nav-bar id="header-container"
+				animation="nav-title-slide-ios7" 
+				back-button-type="button-icon button-clear" 
+				back-button-icon="ion-ios7-arrow-back"></ion-nav-bar>
+	
+		<!--
+			The views will be rendered in the <ion-nav-view> directive below
+			Templates are in the /templates folder (but you could also
+			have templates inline in this html file if you'd like).
+		-->
+		
+		
+	</ion-pane>
+	<ion-side-menu side="right">
+		<div class="bar bar-header bar-dark">
+			<h1 class="title">ACCOUNT SETTINGS</h1>
+		</div>
+		<ion-content has-header="true">
+			<ion-list>
+				<ion-item ng-click="goTo( 'home' )">PAUSE NOTIFICATIONS</ion-item>
+				<ion-item ng-click="goTo( 'home' )">SHARE THIS STRATEGY</ion-item>
+				<ion-item ng-click="goTo( 'about' )">LOGOUT</ion-item>
+			</ion-list>
+		</ion-content>
+	</ion-side-menu>
+</ion-side-menus>

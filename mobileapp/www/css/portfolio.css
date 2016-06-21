@@ -1,0 +1,151 @@
+
+/*
+	==========================================================
+	==========================================================
+	== PORTFOLIO
+*/
+
+#state-portfolio #portfolio-size {
+	
+}
+
+#state-portfolio #portfolio-chart {
+	width: 100%;
+	/* background-image: url("/m/img/TEMP_PORTFOLIO_CHART.png"); */
+	padding: 0px;
+}
+
+#state-portfolio #portfolio-chart.zero-state {
+	background-image: url("../img/zero-state/potfolio-chart.png");
+}
+
+
+/*
+	for the header elements (what the user sees right off the bat)
+*/
+#state-portfolio .holdingName {
+	width: 25%;
+	padding-left: 10px;
+}
+
+#state-portfolio .holdingValue {
+	width: 24%;
+}
+
+#state-portfolio .holdingPL {
+	width: 48%;
+	padding-right: 10px;
+}
+
+/*
+	for the details elements widths
+*/
+
+#state-portfolio .holdingChart {
+	width: 34%;
+	padding-left: 10px;
+}
+
+#state-portfolio .holdingPurchased {
+	width: 32%;
+}
+
+#state-portfolio .holdingCurrent {
+	width: 32%;
+	padding-right: 10px;
+}
+
+/*
+	--------------------------------------------
+*/
+
+#state-portfolio .datatable .header.r {
+	width: 100%;
+	height: 28px;
+	line-height: 28px;
+}
+#state-portfolio .datatable .inner-r {
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+}
+
+#state-portfolio .datatable .header.r > div,
+#state-portfolio .datatable .inner-r > div,
+#state-portfolio .datatable .details > div {
+	display: inline-block;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+#state-portfolio .datatable .header {
+	font-size: 8px;
+	font-weight: 600;
+	border-bottom: 1px solid rgb(208,209,214);
+}
+
+#state-portfolio .datatable .body {
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#state-portfolio .datatable .body .holdingName {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#state-portfolio .datatable .body .holdingChart {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#state-portfolio .datatable .body .r {
+	border-bottom: 1px solid rgb(230,232,236);
+}
+
+#state-portfolio .datatable .body .inner-r {
+	font-size: 16px;
+}
+
+#state-portfolio .datatable .r .subtitle {
+	color:rgb(123,124,127);
+}
+
+
+#state-portfolio .datatable .body .details {
+	width: 100%;
+	background-color:rgb(238,238,237);
+	font-size: 9px;
+	padding: 13px 0px 0px 0px;
+}
+
+#state-portfolio .datatable .body .details .detail-chart {
+	margin-top: 0px;
+	padding-bottom: 0px;
+	margin-bottom: -12px;
+	/* padding: 13px 0px 13px 10px; */
+	height: 70px;
+	width: 100%;
+	/* background-image: url("../img/TEMP_PORTFOLIO_CHART_SMALL.png"); */
+	color: rgba(0,0,0,0);
+}
+
+#state-portfolio .datatable .body .details i {
+	font-size: 10px;
+	padding-right: 6px;
+}
+
+#state-portfolio .datatable .body .details .holdingCurrent,
+#state-portfolio .datatable .body .details .holdingPurchased {
+	padding-bottom: 13px;
+}
+
+
+/*
+	== // portfolio
+	==========================================================
+	==========================================================
+*/

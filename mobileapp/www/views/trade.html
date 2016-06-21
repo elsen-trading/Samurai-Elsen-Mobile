@@ -1,0 +1,158 @@
+
+<!--
+  This template loads for the 'tab.trade' state (app.js)
+-->
+
+<ion-view title="<span class='trade sub'></span><span class='trade main-text'>BACK TO NOTIFICATIONS</span>" id="state-trade">
+
+	<!-- include the side button -->
+	<ion-nav-buttons side="right">
+		<button class="button-icon button-clear ion-navicon" ng-click="toggleRightSideMenu()"></button>
+	</ion-nav-buttons>
+
+	<ion-content has-header="true" has-tabs="true" padding="false" scroll="false" overflow-scroll="false">
+	
+		<div id="trade-top" class="container-fluid">
+		
+			<div class="row">
+				<div id="" class="col-xs-12">
+				
+					<div class="row">					
+						<div class="col-xs-12">
+							<div class="holdingName tleft">
+								<span class="ticker fblue">{{ trade.name.split(':')[1] }}</span><span class="subtext">{{ trade.fullname }}</span>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="row">
+				<div id="" class="col-xs-6">
+				
+					<div class="row">
+						<div id="stock-price" class="col-xs-12 fblue fubold_l">{{ company.price == undefined ? '0' : ( company.price | number:2 ) }}</div>
+					</div>
+						
+				</div>
+				<div id="" class="col-xs-6">
+				
+					<div class="row">
+						<div ng-class="dayChange > 0 || action == true ? 'positive' : 'negative'" class="col-xs-12 f4 right fbold_o">
+							<i ng-class="dayChange > 0 ? 'fa-caret-up' : 'fa-caret-down'" class="fa"></i>
+							<span class="fbold_l">{{ (company.dayChange * quantity) | number:0 }}</span><span class="fregular_l">({{ company.percentDayChange | number:1 }}%)</span>
+						</div>
+					</div>
+
+					<div class="row sm-bottom-spacer">
+						<div id="timeUpdated" class="col-xs-12 f9 right">
+							as of {{ company.updated | date:'h:mma' }} ET
+						</div>
+					</div>
+					
+				</div>
+			</div>
+					
+		</div>
+		
+		<div id="" class="container-fluid">
+			<div id="" class="row">
+				
+				<div class="stock-attr col-xs-3">
+					<span id="stock-high">{{ company.high | largeNumber:2 }}</span>
+					<span class="subtext">HIGH</span>
+				</div>
+				<div class="stock-attr col-xs-3">
+					<span id="stock-low">{{ company.low | largeNumber:2 }}</span>
+					<span class="subtext">LOW</span>
+				</div>
+				<div class="stock-attr col-xs-3">
+					<span class="stock-vol">{{ company.volume | largeNumber:1 }}</span>
+					<span class="subtext">VOL</span>
+				</div>
+				<div class="stock-attr col-xs-3">
+					<span class="stock-cap">{{ company.mktcap | largeNumber:1 }}</span>
+					<span class="subtext">CAP</span>
+				</div>
+				
+			</div>
+		
+			<div class="row">
+				<highchart id="trade-chart"  class="col-xs-12" config="highchartTradeChart"></highchart>
+			</div>
+			
+			<!-- portfolio allocation bar -->
+			<div class="row grey-border-bottom" ng-controller="ProgressCtrl">
+				<progress>
+					<bar ng-hide="action == '-1' ? true : false" value="( action == '-1' ? -1 : (( quantity * company.price + ((action == true) ? -3.49 : 3.49) ) / portfolioSize ) * 100 ) | number:2" type="default">
+						<span>{{ trade.name.split(':')[1] }}</span>
+					</bar>
+					
+					<bar ng-repeat="bar in progressBars | orderBy:'value':true" value="bar.value" type="{{bar.type}}">
+						<span ng-hide="bar.value < 1">{{ bar.name }}</span>
+					</bar>
+				</progress>				
+			</div>
+		</div>
+		
+		<div id="" class="container-fluid">
+			<div class="row sm-bottom-spacer sm-top-spacer">
+				<div class="col-xs-4 f6 fregular_o">REVIEW TRADE</div>
+			</div>
+
+			<div class="row">
+				<div class="col-xs-4 trade-attr">
+					<span class="subtext"># OF SHARES</span>
+					<input id="trade-shares" type="number" min="1" max="{{ action == false ? matchingBuy.executedquantity : null }}" ng-model="quantity">
+				</div>
+
+				<div class="col-xs-3 trade-attr">
+					<span class="subtext">TYPE</span>
+										
+					<div class="onoffswitch">
+						<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" ng-checked="actionTypeChecked( trade.action )" ng-model="action">
+						<label class="onoffswitch-label" for="myonoffswitch">
+							<div class="onoffswitch-inner"></div>
+							<div class="onoffswitch-switch"></div>
+						</label>
+					</div>
+					
+				</div>
+				<div class="col-xs-5 trade-attr tright">
+					<span class="subtext">TRANSACTION VALUE</span>
+					<span ng-include="getTransactionTemplate( trade.action )"></span>
+				</div>
+			</div>
+		</div>
+		
+		<div id="placeTrade-container" ng-controller="PlaceTradeCtrl" class="container-fluid">
+		
+			<div class="row sm-bottom-spacer">
+				<div class="col-xs-12">
+					
+					<button id="placeTrade" ng-click="placeTrade()" class="progress-button" data-style="fill" data-horizontal>
+						<span class="message">
+							<span class="trade_cancelling">Cancelling</span>
+							<span class="trade_default">Tap to Place Order</span>
+							<span class="trade_loading">Tap Again to Cancel</span>
+							<span class="trade_sent">Order Sent</span>
+							<span class="trade_success"><i class="fa fa-check"></i>Order Placed</span>
+							<span class="trade_error"><i class="fa fa-exclamation-triangle"></i>Error</span>
+						</span>
+						<span class="progress">
+							<span id="progress-inner" class="progress-inner"></span>
+						</span>
+					</button>
+					
+				</div>
+			</div>
+			
+			<div id="brokerage-name-container" class="row" ng-class="user.account.type" ng-include="getBrokerageAccountTemplate( user.account.type )">
+				<!-- show the brokerage or paper trading label -->
+			</div>
+		
+		</div>
+				
+	</ion-content>
+</ion-view>

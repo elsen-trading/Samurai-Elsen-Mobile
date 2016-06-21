@@ -1,0 +1,158 @@
+
+<!--
+
+	This template loads for the 'tab.portfolio' state (app.js)  	
+	see notifications, we do something similar there
+	
+-->
+
+<ion-view title="<span class='sub'>CURRENT STRATEGY</span><span class='main-text'>{{ strategyName }}</span>" id="state-portfolio">
+
+	<!-- include the side button -->
+	<ion-nav-buttons side="right">
+		<button class="button-icon button-clear ion-navicon" ng-click="toggleRightSideMenu()"></button>
+	</ion-nav-buttons>
+	
+	<ion-content has-header="true" has-tabs="true" padding="false" scroll="false" overflow-scroll="false">
+
+		<!-- zero-state -->
+		<div ng-show="portfolioTimeSeriesCount == 0" class="zero-state activate">
+			<div class="img"></div>
+			<div class="title">You’re almost there!</div>
+			<div class="text">Use the menu above to activate your strategy and you’ll be good to go.</div>
+		</div>
+		
+		<div ng-hide="portfolioTimeSeriesCount == 0" id="" class="container-fluid">
+			<div class="row sm-top-spacer xsm-bottom-spacer">
+				<div id="" class="col-xs-6">
+				
+					<div class="row">
+						<div class="col-xs-12 f6 fregular_o fgrey">
+							PORTFOLIO VALUE
+						</div>
+					</div>
+
+					<div class="row">
+						<div id="portfolio-size" class="col-xs-12 f1 fblue fubold_l commaFormat">
+							{{ portfolioValue == undefined ? null : ( portfolioValue | number:0 ) }}
+						</div>
+					</div>
+						
+				</div>
+				<div id="" class="col-xs-6">
+				
+					<div class="row">
+					
+						<!-- zero-state -->
+						<div ng-show="executionsCount == 0" class="col-xs-12 f4 right fbold_o">
+							---
+						</div>
+						
+						<div ng-hide="executionsCount == 0" ng-class="portfolioChange > 0 ? 'positive' : 'negative'" class="col-xs-12 f4 right fbold_o">
+							<i ng-class="portfolioChange > 0 ? 'fa-caret-up' : 'fa-caret-down'" class="fa"></i><span class="fbold_l sm-right-spacer">{{ portfolioChange | number:0 }}</span><span class="fregular_l">({{ portfolioChangePercent | number:1 }}%)</span>
+						</div>
+					</div>
+
+					<div class="row sm-bottom-spacer">
+						<div class="col-xs-12 f7 right">
+							OVERALL PROFIT / LOSS
+						</div>
+					</div>
+
+					<div class="row">
+					
+						<!-- zero-state -->
+						<div ng-show="executionsCount == 0" class="col-xs-12 f4 right fbold_o">
+							---
+						</div>
+
+						<div ng-hide="executionsCount == 0" ng-class="portfolioDayChange > 0 ? 'positive' : 'negative'" class="col-xs-12 f4 right fbold_o">
+							<i ng-class="portfolioDayChange > 0 ? 'fa-caret-up' : 'fa-caret-down'" class="fa"></i><span class="fbold_l sm-right-spacer">{{ portfolioDayChange | number:0 }}</span><span class="fregular_l">({{ portfolioDayChangePercent | number:1 }}%)</span>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-xs-12 f7 right">
+							DAY’S PROFIT / LOSS
+						</div>
+					</div>
+					
+				</div>
+			</div>			
+		</div>
+		
+		<div ng-hide="portfolioTimeSeriesCount == 0" id="" class="container-fluid">
+			<div class="row">
+				<div id="portfolio-chart" ng-hide="portfolioTimeSeriesCount > 1" class="zero-state col-xs-12"></div>
+				<highchart id="portfolio-chart" ng-hide="portfolioTimeSeriesCount < 2" class="col-xs-12" config="highchartPortfolioChart"></highchart>
+			</div>
+			
+			<!-- portfolio allocation bar -->
+			<!-- order values, largest % of portfolio first -->
+			<div class="row grey-border-bottom" ng-controller="ProgressCtrl">
+				<progress>
+					<bar ng-repeat="bar in progressBars | orderBy:'value':true" value="bar.value" type="{{ bar.type }}">
+						<span ng-hide="bar.value < 5">{{ bar.name }}</span>
+					</bar>
+				</progress>
+			</div>
+		</div>
+		
+		<div ng-hide="portfolioTimeSeriesCount == 0" id="" class="container-fluid">
+			<div class="row">
+			
+				<div id="currentHoldingsTable" class="datatable">
+				
+					<div class="header r">
+						<div class="holdingName tleft">HOLDINGS</div>
+						<div class="holdingValue tright">MKT VALUE</div>
+						<div class="holdingPL tright">PROFIT / LOSS</div>
+					</div>
+					
+					<!-- zero-state - show if no notifications -->
+					<div ng-show="holdings.length == 0" class="zero-state">
+						<div class="title">No current holdings</div>
+						<div class="text">Everything’s fine... they’ll appear here when you make a few trades.</div>
+					</div>
+					
+					<ul class="body mobile-overflow">
+					
+						<li class="r" ng-repeat="holding in holdings" ng-click="showDetails=!showDetails" ng-init="config = initConfig( baseConfig, holding.name );">
+							<div class="inner-r">
+								<div class="holdingName tleft fblue">{{ holding.name.split(':')[1] }}</div>
+								<div class="holdingValue tright fblue fbold_l">{{ holding.currentvalue | number:0 }}</div>
+								<div ng-class="holding.executedchange > 0 ? 'positive' : 'negative'" class="holdingPL tright fbold_o">
+									<i ng-class="holding.executedchange > 0 ? 'fa-caret-up' : 'fa-caret-down'" class="fa"></i><span class="fbold_l sm-right-spacer">{{ holding.executedchange | number:0  }}</span><span class="fregular_l">({{ holding.executedpercentchange | number:1 }}%)</span>
+								</div>
+							</div>
+							<div class="details" ng-show="showDetails" ng-animate="'fade'">
+							
+								<div class="holdingChart tleft">
+									<span class="f7 subtitle">{{ holding.fullname }}</span>
+									<highchart class="detail-chart" config="config"></highchart>
+								</div>
+								<div class="holdingPurchased tright">
+									<div class="f5 fbold_l">{{ holding.executedprice | number:2 }}</div>
+									<div class="f6 fregular_l">{{ holding.executedquantity | number:0 }} shares</div>
+									<div class="f7 flight_o" am-time-ago="{{ holding.executedtime }}"></div>
+								</div>
+								<div class="holdingCurrent tright">
+									<div class="f5 fbold_l">{{ prices[ holding.name ].price | number:2 }}</div>
+									<div ng-class="holding.executedchange > 0 ? 'positive' : 'negative'" class="f6 fbold_o">
+										<i ng-class="holding.executedchange > 0 ? 'fa-caret-up' : 'fa-caret-down'" class="fa"></i><span class="fbold_l xsm-right-spacer">{{ holding.executedchange | number:0 }}</span><span class="fregular_l">({{ holding.executedpercentchange | number:1 }}%)</span>
+									</div>
+									<div class="f7 flight_o">as of {{ holding.updatedtime | date:'h:mma' }} ET</div>
+								</div>
+								
+							</div>
+						</li>
+						
+					</ul>
+				
+				</div>
+				
+			</div>
+		</div>
+				
+	</ion-content>
+</ion-view>

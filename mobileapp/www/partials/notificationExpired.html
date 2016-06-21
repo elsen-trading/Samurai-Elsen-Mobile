@@ -1,0 +1,21 @@
+<div class="orderType tleft">
+	<span class="f5 fbold_o">{{ actionType( notification.action ) }}</span>
+</div>
+
+<div class="notifyValue tright">
+	<div class="value-container">
+		<div class="holdingName tleft">
+			<span class="ticker fblue">{{ notification.name.split(':')[1] }}</span><span class="subtext">{{ notification.fullname }}</span>
+		</div>
+		<div class="trade">{{ notification.detectedquantity | number:0 }} shares @ ${{ notification.detectedprice | number:2 }}</div>
+	</div>
+</div>
+
+<a ng-click="hideNotification( notification.id )" data-tradeid="{{ notification.id }}" class="notifyExpiration pull-right tright">
+	<div class="detailInfo">
+		<div class="expireDet soon">Expired</div>
+	</div>
+	<span class="circle trade fbold_o">
+		<i class="fa fa-trash-o"></i>
+	</span>
+</a>

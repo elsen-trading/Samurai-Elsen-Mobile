@@ -1,0 +1,661 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+
+
+/*
+	==========================================================
+	==========================================================
+	== ZERO STATE
+*/
+
+#state-portfolio .zero-state .img {
+	background-image: url("../img/zero-state/activate.png");
+	background-size: 93px 168px;
+	width: 93px;
+	height: 168px;
+	margin: 20px auto 8px auto;
+	position: relative;
+	left: 50px;
+}
+
+#state-activity .zero-state .img {
+	background-image: url("../img/zero-state/activity.png");
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	margin: 80px auto 20px auto;
+}
+
+#state-notifications .zero-state .img {
+	background-image: url("../img/zero-state/notifications.png");
+	background-size: 100px 100px;
+	width: 100px;
+	height: 100px;
+	margin: 80px auto 20px auto;
+	position: relative;
+	left: 20px;
+}
+
+#state-missing .zero-state .img {
+	background-image: url("../img/zero-state/missing.png");
+	background-size: 105px 104px;
+	width: 105px;
+	height: 104px;
+	margin: 80px auto 20px auto;
+}
+
+#state-portfolio .zero-state .title {
+	margin-top: 60px;
+}
+
+#state-portfolio .zero-state.activate .title {
+	margin-top: 0px;
+}
+
+.zero-state .title {
+	font-size: 20px;
+	color: rgb(67,134,191);
+	text-align: center;
+	margin: 10px;
+	padding: 0px 35px 0px 35px;
+}
+
+.zero-state .text {
+	font-size: 14px;
+	line-height: 120%;
+	color: rgb(93,94,95);
+	text-align: center;
+	padding: 0px 35px 0px 35px;
+}
+
+.zero-text-bottom {
+	font-size: 11px;
+	line-height: 120%;
+	color: rgb(93,94,95);
+	text-align: center;
+	position: absolute;
+	bottom: 50px;
+	padding: 0px 40px 0px 40px;
+}
+
+
+/*
+	== // zero state
+	==========================================================
+	==========================================================
+*/
+
+
+.menu.menu-right {
+	border-left: 1px solid rgb(107,107,110);
+	border-right: 1px solid rgb(107,107,110);
+	box-sizing: border-box;
+	background-color: rgb(70,83,100);
+}
+
+.menu.menu-right ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none;
+}
+
+.menu.menu-right li {
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	
+	font-family: 'open-regular';
+	font-size:12px;
+	color:rgba(255,255,255,0.9);
+	text-align:left;
+	background-color:rgb(70,83,100);
+	text-transform: uppercase;
+
+	border-bottom: 1px solid rgb(107,107,110);
+}
+
+.nav-text {
+	padding-left: 8px;
+}
+
+.menu.menu-right .js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1;
+}
+
+.menu.menu-right .disable-pointer-events {
+  pointer-events: none !important;
+}
+
+.menu.menu-right a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+/*
+	==========================================================
+	==========================================================
+	== HEADER
+*/
+
+#header-container {
+	background-color:rgb(52,62,75);
+	color:rgb(126,145,170);
+	border-bottom: 2px solid rgb(186,188,192);
+}
+
+#header-title-container > * {
+	display: inherit;
+	padding-left: 8px;
+}
+
+#header-container .title {
+	font-weight:600;
+	font-size: 15px;
+	color:rgb(255,255,255);
+	text-align:left;
+	line-height: inherit;
+	text-transform: uppercase;
+	left: 32px !important;
+	overflow: visible;
+}
+
+#header-container .title .sub {
+	font-size:8px;
+	font-weight:600;
+	color:rgb(126,145,170);
+	text-align:left;
+	display: block;
+	line-height: 10px;
+	margin-top: 6px;
+	margin-left: -32px;
+}
+
+#header-container .title .main-text {
+	margin-left: -32px;
+}
+
+#header-container .title .trade.sub {
+	margin-top: 12px;
+}
+
+#header-container .title .missing.main-text {
+	position: relative;
+	top: 12px;
+}
+
+#header-container .title .trade.main-text {
+	margin-left: 0px;
+}
+
+
+#header-container .buttons.right-buttons button {
+	color:rgb(126,145,170);
+	font-weight: 900;
+	font-size: 30px;
+}
+
+/*
+#header-menu-back-btn {
+	text-align: left;
+	padding-left: 8px;
+}
+
+#header-menu-back-btn > i {
+	line-height: 38px;
+	padding-left: 8px;
+}
+
+#header .back-left {
+	line-height: 38px;
+	padding-left: 0px;
+}
+
+#header-menu-side-btn {
+	text-align: right;
+	padding-right: 8px;
+}
+
+#header-menu-side-btn > i {
+	line-height: 38px;
+	padding-right: 8px;
+}
+
+#grey-header-border {
+	background-color:rgb(186,188,192);
+	width: 100%;
+	height:4px;
+}
+*/
+
+/*
+	== // header
+	==========================================================
+	==========================================================
+*/
+
+
+/*
+	==========================================================
+	==========================================================
+	== FOOTER
+*/
+
+
+/*
+	gonna make the footer absolute within the parent div
+	made need to switch this to fixed later on
+*/
+
+.missing .tabs {
+	display: none;
+}
+
+
+.tabs {
+/*
+	padding-top: 15px;
+	text-transform: uppercase;
+	font-family: 'open-regular';
+	margin-bottom: -1px;
+*/
+	overflow: hidden;
+	background-color: transparent;
+	/* box-sizing: border-box; */
+	height: 58px;
+	/* border-top: 5px solid red; */
+	box-sizing: border-box;
+	border: none !important;
+	background-image: none !important;
+	border-color: transparent !important;
+}
+
+.tabs stupid-tab {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 10px;
+	bottom: 0px;
+	width: 100%;
+	background-color: rgb(52,62,75);
+	z-index: -1;
+}
+
+.tabs .icon {
+	position: relative;
+	z-index: 10;
+}
+
+.tabs .tab-item .tab-title {
+	font-size: 9px;
+	font-weight: 600;
+	position: relative;
+	z-index: 10;
+}
+
+.tabs .tab-item {
+	opacity: 1; /* this is an ionic override */
+	color: rgb(126,145,170);
+}
+
+
+
+
+[disabled] .tab-item {
+	cursor: default;
+	pointer-events: none;
+}
+
+[disabled] .tabs .tab-item.actived:nth-child(6),
+[disabled] .tabs .tab-item-active:nth-child(6) {
+	color: rgb(126,145,170);
+}
+
+[disabled] .tabs .tab-item.actived:nth-child(6)::before,
+[disabled] .tabs .tab-item-active:nth-child(6)::before {
+	border: none !important;
+}
+
+
+.tabs .tab-item.actived:nth-child(6)::before,
+.tabs .tab-item-active:nth-child(6)::before {
+	content:"";
+	width: 0; 
+	height: 0; 
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 8px solid rgb(255,255,255);
+	position: absolute;
+	top: 10px;
+	
+	margin-left: -4px;
+}
+
+[disabled] .tabs i.portfolio,
+[disabled] .tabs i.portfolio{
+	background-image: url("../img/footer/portfolio.png") !important;
+}
+
+
+
+
+.tabs .tab-item-active,
+.tabs .tab-item:active {
+	color:rgb(255,255,255);
+}
+
+.tabs .tab-item:nth-child(6) {
+	padding-right: 60px;
+	margin-top: 10px;
+}
+
+.tabs i.portfolio {
+	background-image: url("../img/footer/portfolio.png");
+	background-size: 22px 22px;
+	width: 22px;
+	height: 22px;
+	margin-top: 7px;
+}
+
+
+.tabs .tab-item.activated i.portfolio,
+.tabs .tab-item-active i.portfolio {
+	background-image: url("../img/footer/portfolio_white.png");
+}
+
+
+
+
+
+.tabs .tab-item-active:nth-child(7)::before {
+	content:"";
+	width: 0; 
+	height: 0; 
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 8px solid rgb(255,255,255);
+	position: absolute;
+	top: -1px;
+
+	left: 48px;
+	top: 0px;
+	z-index: 10;
+}
+
+.tabs .tab-item.activated:nth-child(7)::before,
+.tabs .tab-item-active:nth-child(7)::before {
+	content: '';
+}
+
+.tabs .tab-item:nth-child(7) {
+	z-index: 1;
+	border-radius: 50%;
+	width: 110px;
+	height: 110px;
+	position: absolute;
+	/* top: -10px; */
+	left: 50%;
+	margin-left: -55px;
+	padding-top: 8px;
+	background-color:rgb(52,62,75);
+	/* border: 4px solid rgb(52,62,75); */
+	clip: rect(auto, auto, 55px, auto);
+}
+
+.tabs .tab-item.has-badge {
+	color:rgb(255,255,255);
+}
+
+.tabs .tab-item i.notifications {
+	background-image: url("../img/footer/notifications.png");
+	background-size: 38px 30px;
+	width: 38px;
+	height: 30px;
+	margin-bottom: 2px;
+}
+
+.tabs .tab-item.activated i.notifications,
+.tabs .tab-item-active i.notifications,
+.tabs .tab-item.has-badge i.notifications {
+	background-image: url("../img/footer/notifications_white.png");
+}
+
+.tabs .tab-item .badge.badge-notifications,
+.badge.badge-notifications {
+	background-color: transparent;
+	color: #fff;
+}
+
+.tab-item .badge {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	top: 11px;
+	font-family: 'open-bold';
+	font-style: normal;
+	font-size: 14px;
+}
+
+.tab-item .badge::after {
+	content: '';
+}
+
+.tab-item .badge::after {
+	background-color:rgb(150,191,72);
+	border: 4px solid rgb(52,62,75);
+	border-radius: 50%;
+	width: 110px;
+	height: 110px;
+	left: 0px;
+	top: -10px;
+	position: absolute;
+	z-index: -1;
+}
+
+
+
+.tabs .tab-item:nth-child(8) {
+	padding-left: 60px;
+	margin-top: 10px;
+}
+
+.tabs .tab-item.actived:nth-child(8)::before,
+.tabs .tab-item-active:nth-child(8)::before {
+	content:"";
+	width: 0; 
+	height: 0; 
+	border-left: 7px solid transparent;
+	border-right: 7px solid transparent;
+	border-top: 8px solid rgb(255,255,255);
+	position: absolute;
+	top: 10px;
+
+	margin-left: -8px;
+}
+
+.tabs i.activity {
+	background-image: url("../img/footer/activity.png");
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	margin-top: 10px;
+}
+
+.tabs .tab-item.activated i.activity,
+.tabs .tab-item-active i.activity {
+	background-image: url("../img/footer/activity_white.png");
+}
+
+.tabs .tab-item:nth-child(9){
+	display: none;
+}
+
+
+
+/*
+
+
+
+
+#footer i.portfolio {
+	background:url("/img/footer/portfolio.png") no-repeat;
+	width: 44px;
+	height: 40px;
+	margin-top: 14px;
+}
+
+#footer .active i.portfolio {
+	background:url("/img/footer/portfolio_white.png") no-repeat;
+}
+
+*/
+
+/*
+	== // footer
+	==========================================================
+	==========================================================
+*/
+
+	#state-login .logo,
+	#state-forgot .logo,
+	#state-signup .logo {
+		margin-top: 60px;
+		margin-bottom: 25px;
+	}
+	
+	#state-portfolio #portfolio-chart {
+		height: 150px !important;
+	}
+	
+	#state-portfolio .mobile-overflow {
+		height: 175px !important;
+	}
+		
+	#state-trade #stock-price {
+		font-size: 45px;
+		line-height: 45px;
+	}
+	
+	#state-trade #trade-top {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	#state-trade #trade-chart {
+		height: 125px !important;
+	}
+	
+	#state-trade .stock-attr {
+		height:40px;
+		padding-top: 8px;
+	}
+	
+
+
+/* iphone 4- specific */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+	
+	#state-login .logo,
+	#state-forgot .logo,
+	#state-signup .logo {
+		margin-top: 0px;
+		margin-bottom: 20px;
+	}
+
+	#state-login #social-login-container {
+		margin-bottom: 15px;
+	}
+
+	#state-portfolio #portfolio-chart {
+		height: 120px !important;
+	}
+
+	#state-portfolio #portfolio-chart.zero-state {
+		background-size: 320px 120px !important;
+		width: 320px !important;
+		height: 120px !important;
+	}
+
+	#state-portfolio .mobile-overflow {
+		height: 70px;
+	}
+	
+	#state-trade #trade-top {
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+		
+	#state-trade #stock-price {
+		font-size: 42px;
+		line-height: 42px;
+	}
+	
+	#state-trade #trade-chart {
+		height: 85px !important;
+	}
+	
+	#state-trade .stock-attr {
+		height: 29px;
+		padding-top: 4px;
+	}
+	
+}
+
+/* iphone 5 specific */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71){
+
+	#state-login .logo,
+	#state-forgot .logo {
+		margin-top: 20px;
+		margin-bottom: 25px;
+	}
+	
+	#state-login #social-login-container {
+		margin-bottom: 45px;
+	}
+	
+	#state-portfolio #portfolio-chart {
+		height: 150px !important;
+	}
+	
+	#state-portfolio #portfolio-chart.zero-state {
+		background-size: 320px 150px !important;
+		width: 320px !important;
+		height: 150px !important;
+	}
+	
+	#state-portfolio .mobile-overflow {
+		height: 175px !important;
+	}
+		
+	#state-trade #stock-price {
+		font-size: 45px;
+		line-height: 45px;
+	}
+	
+	#state-trade #trade-top {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	
+	#state-trade #trade-chart {
+		height: 125px !important;
+	}
+	
+	#state-trade #placeTrade-container {
+		margin-top: 8px;
+	}
+	
+	#state-trade .stock-attr {
+		height:40px;
+		padding-top: 8px;
+	}
+}

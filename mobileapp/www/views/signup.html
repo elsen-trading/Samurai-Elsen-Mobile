@@ -1,0 +1,60 @@
+
+<!--
+	This template loads for the 'signup' state (app.js)
+-->
+
+<ion-view title="'Signup'" id="state-signup" hide-nav-bar="true">
+
+	<!-- do not include the side button -->
+
+	<!-- our primary content block for the view -->
+	<ion-content has-tabs="false" padding="false" scroll="true" overflow-scroll="true">
+	
+		<div id="" class="container-fluid">
+		
+			<!-- custom back button for this view -->
+			<a id="back" href="#/login">
+				<i class="f2 fa fa-arrow-circle-left"></i>
+			</a>
+		
+			<div class="row">
+				<div class="center col-xs-12">
+					<a href="#/login" class="logo"></a>
+				</div>
+			</div>
+			
+			<div id="signup-container" class="row">
+				<div class="center col-xs-10 col-xs-offset-1">
+					
+					<div class="title">
+						Become a Trading Machine.</br>It's Free!
+					</div>
+					
+					<form id="signup-form">
+					    
+					    <div ng-if="errorText !== undefined" class="alert alert-danger">{{ errorText }}</div>
+					    <div ng-if="successText !== undefined" class="alert alert-success">{{ successText }}</div>
+					    
+						<span class="input-user-icon">
+							<input type="text" autocapitalize="off" autocorrect="off" placeholder="First name" name="first" ng-model="user.first">
+						</span>
+						<span class="input-user-icon">
+							<input type="text" autocapitalize="off" autocorrect="off" placeholder="Last name" name="last" ng-model="user.last">
+						</span>
+						<span class="input-mail-icon">
+							<input type="email" autocapitalize="off" autocorrect="off" placeholder="Email" name="email" ng-model="user.username">
+						</span>
+						<span class="input-password-icon">
+							<input type="password" autocapitalize="off" autocorrect="off" placeholder="Password" name="password" ng-model="user.password">
+						</span>
+						<div ng-click="signup(user)" class="signup">Signup</div>
+						
+					</form>
+					
+				</div>
+			</div>
+			
+		</div>
+			
+	</ion-content>
+</ion-view>

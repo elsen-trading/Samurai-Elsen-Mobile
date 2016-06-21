@@ -1,0 +1,30 @@
+
+<!--
+	This template loads for the 'tab.activity' state (app.js)
+-->
+
+<ion-view title="<span class='missing main-text'>ACCOUNT NOT SETUP" id="state-missing">
+
+	<!-- include the side button -->
+	<ion-nav-buttons side="right">
+		<button class="button-icon button-clear ion-navicon" ng-click="toggleRightSideMenu()"></button>
+	</ion-nav-buttons>
+
+	<!-- our primary content block for the view -->
+	<ion-content has-header="true" has-tabs="true" padding="false" scroll="false" overflow-scroll="false">
+
+		<!-- zero-state - this view is 'always in zero-state' -- makes the css easier -->
+		<div class="zero-state">
+			<div class="img"></div>
+			<div class="title">You’re missing stuff.</div>
+			<div class="text">
+				It looks like you haven’t set up your account yet.
+				<br><br>
+				Please visit <a href="http://elsen.co" target="_blank">elsen.co</a> with your desktop device to get up and running.
+			</div>
+		</div>		
+	</ion-content>
+	<div class="zero-text-bottom">
+		If you think that this is a mistake, please contact customer support at <a href="mailto:support@elsen.co" target="_blank">support@elsen.co</a>
+	</div>
+</ion-view>

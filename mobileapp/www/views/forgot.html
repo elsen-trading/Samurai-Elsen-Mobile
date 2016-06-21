@@ -1,0 +1,51 @@
+
+<!--
+	This template loads for the 'forgot' state (app.js)
+-->
+
+<ion-view title="'Forgot'" id="state-forgot" hide-nav-bar="true">
+
+	<!-- do not include the side button -->
+
+	<!-- our primary content block for the view -->
+	<ion-content has-tabs="false" padding="false" scroll="false" overflow-scroll="false">
+	
+		<div id="" class="container-fluid">
+		
+			<!-- custom back button for this view -->
+			<a id="back" href="#/login">
+				<i class="f2 fa fa-arrow-circle-left"></i>
+			</a>
+		
+			<div class="row">
+				<div class="center col-xs-12">
+					<a href="#/login" class="logo"></a>
+				</div>
+			</div>
+			
+			<div id="forgot-container" class="row">
+				<div class="center col-xs-10 col-xs-offset-1">
+					
+					<div class="title">
+						Enter the email address associated with your account to reset your password.
+					</div>
+					
+					<form id="forgot-form">
+					    
+					    <div ng-if="errorText !== undefined" class="alert alert-danger">{{ errorText }}</div>
+					    <div ng-if="successText !== undefined" class="alert alert-success">{{ successText }}</div>
+					    
+						<span class="input-user-icon">
+							<input type="text" autocapitalize="off" autocorrect="off" placeholder="Email or Username" name="email" id="user-tf" ng-model="user.email">
+						</span>
+						<div ng-click="forgot(user)" class="forgot">Reset Password</div>
+						
+					</form>
+					
+				</div>
+			</div>
+			
+		</div>
+			
+	</ion-content>
+</ion-view>

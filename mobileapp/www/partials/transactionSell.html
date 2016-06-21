@@ -1,0 +1,5 @@
+<div id="trade-value-sub-1" class="fbold_l">{{ '+ ' + (( quantity * company.price - 3.49 ) | number:2) }}</div>
+<div id="trade-value-sub-2" ng-class="( company.price - matchingBuy.executedprice ) > 0 || action == true ? 'positive' : 'negative'" class="f6 right fbold_o">
+	<i ng-class="( company.price - matchingBuy.executedprice ) > 0 ? 'fa-caret-up' : 'fa-caret-down'" class="fa"></i>
+	<span class="fbold_l">{{ (( company.price - matchingBuy.executedprice ) * quantity) | number:0 }}</span><span class="fregular_l">({{ percentChange( quantity ) | number:1 }}%)</span>
+</div>

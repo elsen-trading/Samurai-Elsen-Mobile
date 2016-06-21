@@ -1,0 +1,183 @@
+
+.progress-button {
+	line-height: 50px;
+}
+
+.progress-button .message {
+	height: 50px;
+}
+
+
+/* iphone 5 specific */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71){
+
+	.progress-button {
+		line-height: 50px;
+	}
+	
+	.progress-button .message {
+		height: 50px;
+	}
+
+}
+
+/* iphone 4- specific */
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) {
+	
+	.progress-button {
+		line-height: 45px;
+	}
+	
+	.progress-button .message {
+		height: 45px;
+	}
+	
+}
+
+
+
+#placeTrade:focus {
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* General styles for all types of buttons */
+.progress-button {
+	position: relative;
+	display: inline-block;
+	padding: 0 10px;
+	outline: none;
+	border: none;
+	background-color:rgb(150,191,72);
+	color: #fff;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+	
+	/* Firefox v1.0+ */
+	-moz-border-radius:3px  !important;
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-border-radius:3px  !important;
+	/* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+	border-radius:3px !important;
+	
+	border: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	outline: none;
+}
+
+.progress-button[disabled],
+.progress-button.state-trade_loading,
+.progress-button.state-trade_cancelling {
+	background-color:rgb(175,205,228);
+}
+
+.progress-button[disabled] {
+	cursor: default;
+	opacity: 1;
+}
+
+.progress-button {
+	width: 100%;
+	-webkit-transition: all 1s;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+
+.progress-button .message {
+	position: relative;
+	display: block;
+	width: 100%;
+	color: #fff;
+	
+	-webkit-transition: opacity 0.3s 0.3s;
+	transition: opacity 0.3s 0.3s;
+}
+
+.progress-button .message > span {
+	display: block;
+	position: relative;
+}
+
+.progress-button.state-trade_success .message i {
+	font-size: 24px;
+	position: relative;
+	top: 2px;
+	margin-right: 5px;
+}
+
+.progress-button.state-trade_error .message i {
+	font-size: 22px;
+	position: relative;
+	top: 2px;
+	margin-right: 10px;
+}
+
+.notransition {
+	-webkit-transition: none !important;
+	transition: none !important;
+}
+
+.progress-button.state-trade_error .progress,
+.progress-button.state-trade_error .progress-inner {
+	background-color: #d9534f;
+}
+
+.progress-button .progress-inner {
+	position: absolute;
+	left: 0;
+	background-color:rgb(67,135,191);
+}
+
+.progress-button[data-horizontal] .progress-inner {
+	top: 0;
+	width: 0;
+	height: 100%;
+	-webkit-transition: width 0.05s, opacity 0.5s;
+	transition: width 0.05s, opacity 0.5s;
+}
+
+/* Fill horizontal */
+/* ====================== */
+
+.progress-button[data-style="fill"][data-horizontal] {
+	overflow: hidden;
+}
+
+.progress-button[data-style="fill"][data-horizontal] .message {
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	
+	-webkit-transform: translateY(-100%);
+	transform: translateY(-100%);
+}
+
+.progress-button[data-style="fill"][data-horizontal].state-trade_cancelling .message {
+	-webkit-transform: translateY(0%);
+	transform: translateY(0%);
+}
+
+.progress-button[data-style="fill"][data-horizontal].state-trade_loading .message {
+	-webkit-transform: translateY(-200%);
+	transform: translateY(-200%);
+}
+
+.progress-button[data-style="fill"][data-horizontal].state-trade_sent .message {
+	-webkit-transform: translateY(-300%);
+	transform: translateY(-300%);
+}
+
+.progress-button[data-style="fill"][data-horizontal].state-trade_success .message {
+	-webkit-transform: translateY(-400%);
+	transform: translateY(-400%);
+}
+
+.progress-button[data-style="fill"][data-horizontal].state-trade_error .message {
+	-webkit-transform: translateY(-500%);
+	transform: translateY(-500%);
+}

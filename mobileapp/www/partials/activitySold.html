@@ -1,0 +1,18 @@
+<div class="baseInfo tleft">
+	<div class="value-container">
+		<div class="holdingName tleft">
+			<span class="ticker fblue">{{ action.name.split(':')[1] }}</span><span class="subtext">{{ action.fullname }}</span>
+		</div>
+		<div class="trade">Sold {{ action.executedquantity | number:0 }} shares @ ${{ action.executedprice | number:2 }}</div>
+	</div>
+</div>
+
+<div class="timeInfo tright">
+	<div class="detailInfo">
+		<div class="trade-time" am-time-ago="{{ action.executedtime }}"></div>
+		<div class="trade-cost fbold_l">+ {{ action.executedcost | number:2 }}</div>
+		<div ng-class="action.executedchange > 0 ? 'positive' : 'negative'" class="trade-performance">
+			<i ng-class="action.executedchange > 0 ? 'fa-caret-up' : 'fa-caret-down'" class="fa"></i><span class="fbold_l">{{ action.executedchange | number:0 }} </span><span class="fregular_l">({{ action.executedpercentchange | number:1 }}%)</span>
+		</div>
+	</div>
+</div>

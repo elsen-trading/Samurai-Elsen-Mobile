@@ -1,0 +1,36 @@
+
+<!--
+	This template loads for the 'tab.notifications' state (app.js)
+	see portfolio, we do something similar there
+-->
+
+<ion-view title="<span class='sub'>NOTIFICATIONS TO REVIEW</span><span class='main-text'>{{ notificationQuantityHeader() }}" id="state-notifications">
+
+	<!-- include the side button -->
+	<ion-nav-buttons side="right">
+		<button class="button-icon button-clear ion-navicon" ng-click="toggleRightSideMenu()"></button>
+	</ion-nav-buttons>
+
+	<!-- our primary content block for the view -->
+	<ion-content has-header="true" has-tabs="true" padding="false">
+	
+		<!-- zero-state - show if no notifications -->
+		<div ng-show="notificationsCount == 0" class="zero-state">
+			<div class="img"></div>
+			<div class="title">No Notifications</div>
+			<div class="text">Your notifications for when to buy and sell will be displayed here.</div>
+		</div>
+		
+		<!-- list of notifications - use template injections for available or expired -->
+		<div id="" class="container-fluid">
+			<div id="notificationsTable" class="row datatable">
+			
+				<ul class="body">
+					<li class="r" ng-class="{ 'expired':isExpired( notification.expiretime ), 'hiding': notification.clicked }" ng-hide="notification.show == false" ng-repeat="notification in notifications | orderBy:'expiretime':true" ng-include="getNotificationTemplate( notification.expiretime )"></li>
+				</ul>
+				
+			</div>
+		</div>
+		
+	</ion-content>
+</ion-view>

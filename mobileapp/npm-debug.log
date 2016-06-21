@@ -1,0 +1,1420 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'cordova',
+1 verbose cli   'ionic',
+1 verbose cli   'gulp' ]
+2 info using npm@1.2.14
+3 info using node@v0.8.22
+4 verbose read json /usr/local/lib/package.json
+5 verbose read json /usr/local/lib/package.json
+6 verbose cache add [ 'cordova', null ]
+7 verbose cache add name=undefined spec="cordova" args=["cordova",null]
+8 verbose parsed url { pathname: 'cordova', path: 'cordova', href: 'cordova' }
+9 verbose cache add [ 'ionic', null ]
+10 verbose cache add name=undefined spec="ionic" args=["ionic",null]
+11 verbose parsed url { pathname: 'ionic', path: 'ionic', href: 'ionic' }
+12 verbose cache add [ 'gulp', null ]
+13 verbose cache add name=undefined spec="gulp" args=["gulp",null]
+14 verbose parsed url { pathname: 'gulp', path: 'gulp', href: 'gulp' }
+15 silly lockFile a98f2055-cordova cordova
+16 verbose lock cordova /Users/zsheffer/.npm/a98f2055-cordova.lock
+17 silly lockFile 00d10074-ionic ionic
+18 verbose lock ionic /Users/zsheffer/.npm/00d10074-ionic.lock
+19 silly lockFile 9750c68d-gulp gulp
+20 verbose lock gulp /Users/zsheffer/.npm/9750c68d-gulp.lock
+21 silly lockFile a98f2055-cordova cordova
+22 silly lockFile a98f2055-cordova cordova
+23 silly lockFile 9750c68d-gulp gulp
+24 silly lockFile 9750c68d-gulp gulp
+25 silly lockFile 00d10074-ionic ionic
+26 silly lockFile 00d10074-ionic ionic
+27 verbose addNamed [ 'cordova', '' ]
+28 verbose addNamed [ null, '' ]
+29 silly lockFile de8d9fad-cordova cordova@
+30 verbose lock cordova@ /Users/zsheffer/.npm/de8d9fad-cordova.lock
+31 silly addNameRange { name: 'cordova', range: '', hasData: false }
+32 verbose addNamed [ 'ionic', '' ]
+33 verbose addNamed [ null, '' ]
+34 silly lockFile 966fc04a-ionic ionic@
+35 verbose lock ionic@ /Users/zsheffer/.npm/966fc04a-ionic.lock
+36 verbose addNamed [ 'gulp', '' ]
+37 verbose addNamed [ null, '' ]
+38 silly lockFile 72f4391e-gulp gulp@
+39 verbose lock gulp@ /Users/zsheffer/.npm/72f4391e-gulp.lock
+40 silly addNameRange { name: 'ionic', range: '', hasData: false }
+41 silly addNameRange { name: 'gulp', range: '', hasData: false }
+42 verbose url raw gulp
+43 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+44 verbose url resolved https://registry.npmjs.org/gulp
+45 info trying registry request attempt 1 at 14:42:37
+46 http GET https://registry.npmjs.org/gulp
+47 verbose url raw cordova
+48 verbose url resolving [ 'https://registry.npmjs.org/', './cordova' ]
+49 verbose url resolved https://registry.npmjs.org/cordova
+50 info trying registry request attempt 1 at 14:42:37
+51 verbose etag "BDSLWUOQ3NRB0KGY03M6LAM1D"
+52 http GET https://registry.npmjs.org/cordova
+53 verbose url raw ionic
+54 verbose url resolving [ 'https://registry.npmjs.org/', './ionic' ]
+55 verbose url resolved https://registry.npmjs.org/ionic
+56 info trying registry request attempt 1 at 14:42:37
+57 verbose etag "7PI51G6J83WEIMU0UNWQDZ2O5"
+58 http GET https://registry.npmjs.org/ionic
+59 http 200 https://registry.npmjs.org/ionic
+60 silly registry.get cb [ 200,
+60 silly registry.get   { date: 'Thu, 27 Mar 2014 18:42:36 GMT',
+60 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+60 silly registry.get     etag: '"4PJ1724CAOY5ED5IE2ICJNA7M"',
+60 silly registry.get     'content-type': 'application/json',
+60 silly registry.get     via: '1.1 varnish',
+60 silly registry.get     'cache-control': 'max-age=1',
+60 silly registry.get     'content-length': '13399',
+60 silly registry.get     'accept-ranges': 'bytes',
+60 silly registry.get     age: '1303',
+60 silly registry.get     'x-served-by': 'cache-v36-ASH, cache-jfk1027-JFK',
+60 silly registry.get     'x-cache': 'MISS, MISS',
+60 silly registry.get     'x-cache-hits': '0, 0',
+60 silly registry.get     'x-timer': 'S1395936479.109486103,VS0,VS-355,VE-265,VE9277236',
+60 silly registry.get     vary: 'Accept',
+60 silly registry.get     'keep-alive': 'timeout=10, max=50',
+60 silly registry.get     connection: 'Keep-Alive' } ]
+61 silly addNameRange number 2 { name: 'ionic', range: '', hasData: true }
+62 silly addNameRange versions [ 'ionic',
+62 silly addNameRange   [ '0.9.6',
+62 silly addNameRange     '0.9.8',
+62 silly addNameRange     '0.9.9',
+62 silly addNameRange     '0.9.10',
+62 silly addNameRange     '0.9.11',
+62 silly addNameRange     '0.9.12',
+62 silly addNameRange     '0.9.13',
+62 silly addNameRange     '0.9.14',
+62 silly addNameRange     '0.9.15',
+62 silly addNameRange     '0.9.16',
+62 silly addNameRange     '1.0.0-beta.1' ] ]
+63 verbose addNamed [ 'ionic', '1.0.0-beta.1' ]
+64 verbose addNamed [ '1.0.0-beta.1', '1.0.0-beta.1' ]
+65 silly lockFile 7b9f9769-ionic-1-0-0-beta-1 ionic@1.0.0-beta.1
+66 verbose lock ionic@1.0.0-beta.1 /Users/zsheffer/.npm/7b9f9769-ionic-1-0-0-beta-1.lock
+67 silly lockFile 4dacd3ca-org-ionic-ionic-1-0-0-beta-1-tgz https://registry.npmjs.org/ionic/-/ionic-1.0.0-beta.1.tgz
+68 verbose lock https://registry.npmjs.org/ionic/-/ionic-1.0.0-beta.1.tgz /Users/zsheffer/.npm/4dacd3ca-org-ionic-ionic-1-0-0-beta-1-tgz.lock
+69 verbose addRemoteTarball [ 'https://registry.npmjs.org/ionic/-/ionic-1.0.0-beta.1.tgz',
+69 verbose addRemoteTarball   '7c01b1ff48b9ab79d26cd86a5274aeb165713d7f' ]
+70 info retry fetch attempt 1 at 14:42:38
+71 verbose fetch to= /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/tmp.tgz
+72 http GET https://registry.npmjs.org/ionic/-/ionic-1.0.0-beta.1.tgz
+73 http 200 https://registry.npmjs.org/gulp
+74 silly registry.get cb [ 200,
+74 silly registry.get   { date: 'Thu, 27 Mar 2014 18:42:36 GMT',
+74 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+74 silly registry.get     etag: '"EWOA9I63AO2U49G0TU9TO8BW2"',
+74 silly registry.get     'content-type': 'application/json',
+74 silly registry.get     via: '1.1 varnish',
+74 silly registry.get     'cache-control': 'max-age=1',
+74 silly registry.get     'content-length': '62690',
+74 silly registry.get     'accept-ranges': 'bytes',
+74 silly registry.get     age: '858',
+74 silly registry.get     'x-served-by': 'cache-v36-ASH, cache-jfk1031-JFK',
+74 silly registry.get     'x-cache': 'MISS, MISS',
+74 silly registry.get     'x-cache-hits': '0, 0',
+74 silly registry.get     'x-timer': 'S1395943764.693102360,VS0,VS-358,VE-349,VE1991554',
+74 silly registry.get     vary: 'Accept',
+74 silly registry.get     'keep-alive': 'timeout=10, max=50',
+74 silly registry.get     connection: 'Keep-Alive' } ]
+75 silly addNameRange number 2 { name: 'gulp', range: '', hasData: true }
+76 silly addNameRange versions [ 'gulp',
+76 silly addNameRange   [ '0.0.1',
+76 silly addNameRange     '0.0.2',
+76 silly addNameRange     '0.0.3',
+76 silly addNameRange     '0.0.4',
+76 silly addNameRange     '0.0.5',
+76 silly addNameRange     '0.0.7',
+76 silly addNameRange     '0.0.8',
+76 silly addNameRange     '0.0.9',
+76 silly addNameRange     '0.1.0',
+76 silly addNameRange     '0.2.0',
+76 silly addNameRange     '1.0.0',
+76 silly addNameRange     '1.1.0',
+76 silly addNameRange     '1.2.0',
+76 silly addNameRange     '1.2.1',
+76 silly addNameRange     '2.0.0',
+76 silly addNameRange     '2.0.1',
+76 silly addNameRange     '2.1.0',
+76 silly addNameRange     '2.2.0',
+76 silly addNameRange     '2.3.0',
+76 silly addNameRange     '2.4.0',
+76 silly addNameRange     '2.4.1',
+76 silly addNameRange     '2.6.0',
+76 silly addNameRange     '2.6.1',
+76 silly addNameRange     '2.7.0',
+76 silly addNameRange     '3.0.0',
+76 silly addNameRange     '3.1.1',
+76 silly addNameRange     '3.1.2',
+76 silly addNameRange     '3.1.3',
+76 silly addNameRange     '3.1.4',
+76 silly addNameRange     '3.2.0',
+76 silly addNameRange     '3.2.1',
+76 silly addNameRange     '3.2.2',
+76 silly addNameRange     '3.2.3',
+76 silly addNameRange     '3.2.4',
+76 silly addNameRange     '3.2.5',
+76 silly addNameRange     '3.3.0',
+76 silly addNameRange     '3.3.1',
+76 silly addNameRange     '3.3.2',
+76 silly addNameRange     '3.3.4',
+76 silly addNameRange     '3.4.0' ] ]
+77 verbose addNamed [ 'gulp', '3.4.0' ]
+78 verbose addNamed [ '3.4.0', '3.4.0' ]
+79 silly lockFile dc8eaae6-gulp-3-4-0 gulp@3.4.0
+80 verbose lock gulp@3.4.0 /Users/zsheffer/.npm/dc8eaae6-gulp-3-4-0.lock
+81 silly lockFile 4eb9aae8-ry-npmjs-org-gulp-gulp-3-4-0-tgz https://registry.npmjs.org/gulp/-/gulp-3.4.0.tgz
+82 verbose lock https://registry.npmjs.org/gulp/-/gulp-3.4.0.tgz /Users/zsheffer/.npm/4eb9aae8-ry-npmjs-org-gulp-gulp-3-4-0-tgz.lock
+83 verbose addRemoteTarball [ 'https://registry.npmjs.org/gulp/-/gulp-3.4.0.tgz',
+83 verbose addRemoteTarball   'ad7b17e3a026812bfa50f2a341c4bed9d7d4af16' ]
+84 info retry fetch attempt 1 at 14:42:38
+85 verbose fetch to= /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/tmp.tgz
+86 http GET https://registry.npmjs.org/gulp/-/gulp-3.4.0.tgz
+87 http 200 https://registry.npmjs.org/cordova
+88 silly registry.get cb [ 200,
+88 silly registry.get   { date: 'Thu, 27 Mar 2014 18:42:36 GMT',
+88 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R14B04)',
+88 silly registry.get     etag: '"3TX9BTCHKGGMXJI2DK80A0QYA"',
+88 silly registry.get     'content-type': 'application/json',
+88 silly registry.get     via: '1.1 varnish',
+88 silly registry.get     'cache-control': 'max-age=1',
+88 silly registry.get     'content-length': '272415',
+88 silly registry.get     'accept-ranges': 'bytes',
+88 silly registry.get     age: '67887',
+88 silly registry.get     'x-served-by': 'cache-v43-ASH, cache-jfk1027-JFK',
+88 silly registry.get     'x-cache': 'MISS, HIT',
+88 silly registry.get     'x-cache-hits': '0, 1',
+88 silly registry.get     'x-timer': 'S1395877868.731773138,VS0,VS-91,VE554,VE67887535',
+88 silly registry.get     vary: 'Accept',
+88 silly registry.get     'keep-alive': 'timeout=10, max=50',
+88 silly registry.get     connection: 'Keep-Alive' } ]
+89 http 200 https://registry.npmjs.org/ionic/-/ionic-1.0.0-beta.1.tgz
+90 silly addNameRange number 2 { name: 'cordova', range: '', hasData: true }
+91 silly addNameRange versions [ 'cordova',
+91 silly addNameRange   [ '0.0.1',
+91 silly addNameRange     '0.0.2',
+91 silly addNameRange     '0.0.3',
+91 silly addNameRange     '0.0.4',
+91 silly addNameRange     '0.0.5',
+91 silly addNameRange     '0.0.6',
+91 silly addNameRange     '0.0.7',
+91 silly addNameRange     '0.0.8',
+91 silly addNameRange     '0.0.9',
+91 silly addNameRange     '0.1.0',
+91 silly addNameRange     '0.1.1',
+91 silly addNameRange     '0.1.2',
+91 silly addNameRange     '0.1.3',
+91 silly addNameRange     '0.1.4',
+91 silly addNameRange     '0.1.5',
+91 silly addNameRange     '0.1.6',
+91 silly addNameRange     '0.1.7',
+91 silly addNameRange     '0.1.8',
+91 silly addNameRange     '0.1.9',
+91 silly addNameRange     '0.1.10',
+91 silly addNameRange     '0.1.11',
+91 silly addNameRange     '0.1.12',
+91 silly addNameRange     '0.1.13',
+91 silly addNameRange     '0.1.14',
+91 silly addNameRange     '2.2.0',
+91 silly addNameRange     '2.3.0',
+91 silly addNameRange     '2.3.1',
+91 silly addNameRange     '2.3.2',
+91 silly addNameRange     '2.3.3',
+91 silly addNameRange     '2.3.5',
+91 silly addNameRange     '2.3.6',
+91 silly addNameRange     '2.4.0',
+91 silly addNameRange     '2.4.1',
+91 silly addNameRange     '2.4.2',
+91 silly addNameRange     '2.4.3',
+91 silly addNameRange     '2.4.4',
+91 silly addNameRange     '2.4.5',
+91 silly addNameRange     '2.4.6',
+91 silly addNameRange     '2.4.7',
+91 silly addNameRange     '2.4.8',
+91 silly addNameRange     '2.4.9',
+91 silly addNameRange     '2.4.10',
+91 silly addNameRange     '2.5.0',
+91 silly addNameRange     '2.5.2',
+91 silly addNameRange     '2.5.3',
+91 silly addNameRange     '2.5.4',
+91 silly addNameRange     '2.5.5',
+91 silly addNameRange     '2.6.0',
+91 silly addNameRange     '2.6.1',
+91 silly addNameRange     '2.6.2',
+91 silly addNameRange     '2.7.0-rc.1',
+91 silly addNameRange     '2.7.1-rc.1',
+91 silly addNameRange     '2.7.2',
+91 silly addNameRange     '2.7.3',
+91 silly addNameRange     '2.7.4',
+91 silly addNameRange     '2.8.0',
+91 silly addNameRange     '2.8.1',
+91 silly addNameRange     '2.8.2',
+91 silly addNameRange     '2.8.3',
+91 silly addNameRange     '2.8.4',
+91 silly addNameRange     '2.8.5',
+91 silly addNameRange     '2.8.6',
+91 silly addNameRange     '2.8.7',
+91 silly addNameRange     '2.8.8',
+91 silly addNameRange     '2.8.9',
+91 silly addNameRange     '2.8.10',
+91 silly addNameRange     '2.8.11',
+91 silly addNameRange     '2.8.12',
+91 silly addNameRange     '2.8.13',
+91 silly addNameRange     '2.8.14',
+91 silly addNameRange     '2.8.15' ] ]
+92 verbose addNamed [ 'cordova', '2.8.15' ]
+93 verbose addNamed [ '2.8.15', '2.8.15' ]
+94 silly lockFile f26f3d34-cordova-2-8-15 cordova@2.8.15
+95 verbose lock cordova@2.8.15 /Users/zsheffer/.npm/f26f3d34-cordova-2-8-15.lock
+96 verbose read json /Users/zsheffer/.npm/cordova/2.8.15/package/package.json
+97 silly lockFile f26f3d34-cordova-2-8-15 cordova@2.8.15
+98 silly lockFile f26f3d34-cordova-2-8-15 cordova@2.8.15
+99 silly lockFile de8d9fad-cordova cordova@
+100 silly lockFile de8d9fad-cordova cordova@
+101 http 200 https://registry.npmjs.org/gulp/-/gulp-3.4.0.tgz
+102 silly shasum updated bytes 20438
+103 info shasum ad7b17e3a026812bfa50f2a341c4bed9d7d4af16
+103 info shasum /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/tmp.tgz
+104 verbose tar unpack /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/tmp.tgz
+105 silly lockFile f3264373-8324-0-24555593822151423-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package
+106 verbose lock /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package /Users/zsheffer/.npm/f3264373-8324-0-24555593822151423-package.lock
+107 silly lockFile 1d0ba7d6-8324-0-24555593822151423-tmp-tgz /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/tmp.tgz
+108 verbose lock /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/tmp.tgz /Users/zsheffer/.npm/1d0ba7d6-8324-0-24555593822151423-tmp-tgz.lock
+109 silly gunzTarPerm modes [ '755', '644' ]
+110 silly gunzTarPerm extractEntry package.json
+111 silly gunzTarPerm extractEntry .npmignore
+112 silly gunzTarPerm extractEntry README.md
+113 silly gunzTarPerm extractEntry LICENSE
+114 silly gunzTarPerm extractEntry gulpfile.js
+115 silly gunzTarPerm extractEntry index.js
+116 silly gunzTarPerm extractEntry completion/README.md
+117 silly gunzTarPerm extractEntry completion/bash
+118 silly gunzTarPerm extractEntry completion/zsh
+119 silly gunzTarPerm extractEntry CHANGELOG.md
+120 silly gunzTarPerm extractEntry docs/README.md
+121 silly gunzTarPerm extractEntry docs/API.md
+122 silly gunzTarPerm extractEntry docs/FAQ.md
+123 silly gunzTarPerm extractEntry docs/getting-started.md
+124 silly gunzTarPerm extractEntry docs/recipes/combining-streams-to-handle-errors.md
+125 silly gunzTarPerm extractEntry docs/recipes/mocha-test-runner-with-gulp.md
+126 silly gunzTarPerm extractEntry docs/recipes/pass-params-from-cli.md
+127 silly gunzTarPerm extractEntry docs/recipes/rebuild-only-files-that-change.md
+128 silly gunzTarPerm extractEntry docs/recipes/specifying-a-cwd.md
+129 silly gunzTarPerm extractEntry docs/recipes/specifying-a-different-gulpfile.md
+130 silly gunzTarPerm extractEntry docs/recipes/using-coffee-script-for-gulpfile.md
+131 silly gunzTarPerm extractEntry docs/recipes/using-external-config-file.md
+132 silly gunzTarPerm extractEntry docs/recipes/using-multiple-sources-in-one-task.md
+133 silly gunzTarPerm extractEntry docs/writing-a-plugin/README.md
+134 silly gunzTarPerm extractEntry docs/writing-a-plugin/dealing-with-streams.md
+135 silly gunzTarPerm extractEntry docs/writing-a-plugin/guidelines.md
+136 silly gunzTarPerm extractEntry docs/writing-a-plugin/readme-conventions.md
+137 silly gunzTarPerm extractEntry docs/writing-a-plugin/testing.md
+138 silly gunzTarPerm extractEntry docs/writing-a-plugin/using-buffers.md
+139 silly gunzTarPerm extractEntry .jshintrc
+140 silly gunzTarPerm extractEntry .travis.yml
+141 silly gunzTarPerm extractEntry lib/completion.js
+142 silly gunzTarPerm extractEntry lib/taskTree.js
+143 silly gunzTarPerm extractEntry bin/gulp.js
+144 silly gunzTarPerm extractEntry test/dest.js
+145 silly gunzTarPerm extractEntry test/src.js
+146 silly gunzTarPerm extractEntry test/taskTree.js
+147 silly gunzTarPerm extractEntry test/tasks.js
+148 silly gunzTarPerm extractEntry test/fixtures/copy/example.txt
+149 silly gunzTarPerm extractEntry test/fixtures/stuff/run.dmc
+150 silly gunzTarPerm extractEntry test/fixtures/stuff/test.dmc
+151 silly gunzTarPerm extractEntry test/fixtures/test/run.jade
+152 silly gunzTarPerm extractEntry test/fixtures/test.coffee
+153 verbose read json /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package/package.json
+154 silly lockFile f3264373-8324-0-24555593822151423-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package
+155 silly lockFile f3264373-8324-0-24555593822151423-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package
+156 silly lockFile 1d0ba7d6-8324-0-24555593822151423-tmp-tgz /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/tmp.tgz
+157 silly lockFile 1d0ba7d6-8324-0-24555593822151423-tmp-tgz /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/tmp.tgz
+158 verbose from cache /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package/package.json
+159 verbose tar pack [ '/Users/zsheffer/.npm/gulp/3.4.0/package.tgz',
+159 verbose tar pack   '/var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package' ]
+160 verbose tarball /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+161 verbose folder /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package
+162 silly lockFile f3264373-8324-0-24555593822151423-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package
+163 verbose lock /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package /Users/zsheffer/.npm/f3264373-8324-0-24555593822151423-package.lock
+164 silly lockFile 45489655-effer-npm-gulp-3-4-0-package-tgz /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+165 verbose lock /Users/zsheffer/.npm/gulp/3.4.0/package.tgz /Users/zsheffer/.npm/45489655-effer-npm-gulp-3-4-0-package-tgz.lock
+166 silly lockFile f3264373-8324-0-24555593822151423-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package
+167 silly lockFile f3264373-8324-0-24555593822151423-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758324-0.24555593822151423/package
+168 silly lockFile 45489655-effer-npm-gulp-3-4-0-package-tgz /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+169 silly lockFile 45489655-effer-npm-gulp-3-4-0-package-tgz /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+170 silly lockFile 540183ad--zsheffer-npm-gulp-3-4-0-package /Users/zsheffer/.npm/gulp/3.4.0/package
+171 verbose lock /Users/zsheffer/.npm/gulp/3.4.0/package /Users/zsheffer/.npm/540183ad--zsheffer-npm-gulp-3-4-0-package.lock
+172 silly lockFile 540183ad--zsheffer-npm-gulp-3-4-0-package /Users/zsheffer/.npm/gulp/3.4.0/package
+173 silly lockFile 540183ad--zsheffer-npm-gulp-3-4-0-package /Users/zsheffer/.npm/gulp/3.4.0/package
+174 verbose tar unpack /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+175 silly lockFile 540183ad--zsheffer-npm-gulp-3-4-0-package /Users/zsheffer/.npm/gulp/3.4.0/package
+176 verbose lock /Users/zsheffer/.npm/gulp/3.4.0/package /Users/zsheffer/.npm/540183ad--zsheffer-npm-gulp-3-4-0-package.lock
+177 silly lockFile 45489655-effer-npm-gulp-3-4-0-package-tgz /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+178 verbose lock /Users/zsheffer/.npm/gulp/3.4.0/package.tgz /Users/zsheffer/.npm/45489655-effer-npm-gulp-3-4-0-package-tgz.lock
+179 silly gunzTarPerm modes [ '755', '644' ]
+180 silly gunzTarPerm extractEntry package.json
+181 silly gunzTarPerm extractEntry .npmignore
+182 silly gunzTarPerm extractEntry README.md
+183 silly gunzTarPerm extractEntry LICENSE
+184 silly gunzTarPerm extractEntry gulpfile.js
+185 silly gunzTarPerm extractEntry index.js
+186 silly gunzTarPerm extractEntry docs/README.md
+187 silly gunzTarPerm extractEntry docs/API.md
+188 silly gunzTarPerm extractEntry docs/FAQ.md
+189 silly gunzTarPerm extractEntry docs/getting-started.md
+190 silly gunzTarPerm extractEntry docs/recipes/combining-streams-to-handle-errors.md
+191 silly gunzTarPerm extractEntry docs/recipes/mocha-test-runner-with-gulp.md
+192 silly gunzTarPerm extractEntry docs/recipes/pass-params-from-cli.md
+193 silly gunzTarPerm extractEntry docs/recipes/rebuild-only-files-that-change.md
+194 silly gunzTarPerm extractEntry docs/recipes/specifying-a-cwd.md
+195 silly gunzTarPerm extractEntry docs/recipes/specifying-a-different-gulpfile.md
+196 silly gunzTarPerm extractEntry docs/recipes/using-coffee-script-for-gulpfile.md
+197 silly gunzTarPerm extractEntry docs/recipes/using-external-config-file.md
+198 silly gunzTarPerm extractEntry docs/recipes/using-multiple-sources-in-one-task.md
+199 silly gunzTarPerm extractEntry docs/writing-a-plugin/README.md
+200 silly gunzTarPerm extractEntry docs/writing-a-plugin/dealing-with-streams.md
+201 silly gunzTarPerm extractEntry docs/writing-a-plugin/guidelines.md
+202 silly gunzTarPerm extractEntry docs/writing-a-plugin/readme-conventions.md
+203 silly gunzTarPerm extractEntry docs/writing-a-plugin/testing.md
+204 silly gunzTarPerm extractEntry docs/writing-a-plugin/using-buffers.md
+205 silly gunzTarPerm extractEntry .jshintrc
+206 silly gunzTarPerm extractEntry .travis.yml
+207 silly gunzTarPerm extractEntry lib/completion.js
+208 silly gunzTarPerm extractEntry lib/taskTree.js
+209 silly gunzTarPerm extractEntry bin/gulp.js
+210 silly gunzTarPerm extractEntry CHANGELOG.md
+211 silly gunzTarPerm extractEntry completion/README.md
+212 silly gunzTarPerm extractEntry completion/bash
+213 silly gunzTarPerm extractEntry completion/zsh
+214 silly gunzTarPerm extractEntry test/dest.js
+215 silly gunzTarPerm extractEntry test/src.js
+216 silly gunzTarPerm extractEntry test/tasks.js
+217 silly gunzTarPerm extractEntry test/taskTree.js
+218 silly gunzTarPerm extractEntry test/fixtures/copy/example.txt
+219 silly gunzTarPerm extractEntry test/fixtures/stuff/run.dmc
+220 silly gunzTarPerm extractEntry test/fixtures/stuff/test.dmc
+221 silly gunzTarPerm extractEntry test/fixtures/test/run.jade
+222 silly gunzTarPerm extractEntry test/fixtures/test.coffee
+223 verbose read json /Users/zsheffer/.npm/gulp/3.4.0/package/package.json
+224 silly lockFile 540183ad--zsheffer-npm-gulp-3-4-0-package /Users/zsheffer/.npm/gulp/3.4.0/package
+225 silly lockFile 540183ad--zsheffer-npm-gulp-3-4-0-package /Users/zsheffer/.npm/gulp/3.4.0/package
+226 silly lockFile 45489655-effer-npm-gulp-3-4-0-package-tgz /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+227 silly lockFile 45489655-effer-npm-gulp-3-4-0-package-tgz /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+228 silly shasum updated bytes 20453
+229 info shasum e5432676ba128ed641b96c3c860bba662e5961c2
+229 info shasum /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+230 verbose from cache /Users/zsheffer/.npm/gulp/3.4.0/package/package.json
+231 verbose chmod /Users/zsheffer/.npm/gulp/3.4.0/package.tgz 644
+232 verbose chown /Users/zsheffer/.npm/gulp/3.4.0/package.tgz [ 501, 20 ]
+233 silly lockFile 4eb9aae8-ry-npmjs-org-gulp-gulp-3-4-0-tgz https://registry.npmjs.org/gulp/-/gulp-3.4.0.tgz
+234 silly lockFile 4eb9aae8-ry-npmjs-org-gulp-gulp-3-4-0-tgz https://registry.npmjs.org/gulp/-/gulp-3.4.0.tgz
+235 silly lockFile dc8eaae6-gulp-3-4-0 gulp@3.4.0
+236 silly lockFile dc8eaae6-gulp-3-4-0 gulp@3.4.0
+237 silly lockFile 72f4391e-gulp gulp@
+238 silly lockFile 72f4391e-gulp gulp@
+239 silly shasum updated bytes 40960
+240 silly shasum updated bytes 40960
+241 silly shasum updated bytes 40960
+242 silly shasum updated bytes 40960
+243 silly shasum updated bytes 40960
+244 silly shasum updated bytes 40960
+245 silly shasum updated bytes 40960
+246 silly shasum updated bytes 40960
+247 silly shasum updated bytes 40960
+248 silly shasum updated bytes 40960
+249 silly shasum updated bytes 40960
+250 silly shasum updated bytes 40960
+251 silly shasum updated bytes 40960
+252 silly shasum updated bytes 40960
+253 silly shasum updated bytes 40960
+254 silly shasum updated bytes 40960
+255 silly shasum updated bytes 40960
+256 silly shasum updated bytes 40960
+257 silly shasum updated bytes 40960
+258 silly shasum updated bytes 40960
+259 silly shasum updated bytes 40960
+260 silly shasum updated bytes 40960
+261 silly shasum updated bytes 40960
+262 silly shasum updated bytes 40960
+263 silly shasum updated bytes 40960
+264 silly shasum updated bytes 40960
+265 silly shasum updated bytes 40960
+266 silly shasum updated bytes 40960
+267 silly shasum updated bytes 40960
+268 silly shasum updated bytes 40960
+269 silly shasum updated bytes 40960
+270 silly shasum updated bytes 40960
+271 silly shasum updated bytes 40960
+272 silly shasum updated bytes 40960
+273 silly shasum updated bytes 40960
+274 silly shasum updated bytes 40960
+275 silly shasum updated bytes 40960
+276 silly shasum updated bytes 40960
+277 silly shasum updated bytes 40960
+278 silly shasum updated bytes 40960
+279 silly shasum updated bytes 40960
+280 silly shasum updated bytes 40960
+281 silly shasum updated bytes 40960
+282 silly shasum updated bytes 40960
+283 silly shasum updated bytes 40960
+284 silly shasum updated bytes 40960
+285 silly shasum updated bytes 40960
+286 silly shasum updated bytes 40960
+287 silly shasum updated bytes 40960
+288 silly shasum updated bytes 40960
+289 silly shasum updated bytes 40960
+290 silly shasum updated bytes 40960
+291 silly shasum updated bytes 40960
+292 silly shasum updated bytes 40960
+293 silly shasum updated bytes 40960
+294 silly shasum updated bytes 40960
+295 silly shasum updated bytes 40960
+296 silly shasum updated bytes 40960
+297 silly shasum updated bytes 40960
+298 silly shasum updated bytes 40960
+299 silly shasum updated bytes 40960
+300 silly shasum updated bytes 40960
+301 silly shasum updated bytes 40960
+302 silly shasum updated bytes 40960
+303 silly shasum updated bytes 40960
+304 silly shasum updated bytes 40960
+305 silly shasum updated bytes 40960
+306 silly shasum updated bytes 40960
+307 silly shasum updated bytes 40960
+308 silly shasum updated bytes 40960
+309 silly shasum updated bytes 40960
+310 silly shasum updated bytes 40960
+311 silly shasum updated bytes 40960
+312 silly shasum updated bytes 40960
+313 silly shasum updated bytes 40960
+314 silly shasum updated bytes 40960
+315 silly shasum updated bytes 40960
+316 silly shasum updated bytes 40960
+317 silly shasum updated bytes 1319
+318 info shasum 7c01b1ff48b9ab79d26cd86a5274aeb165713d7f
+318 info shasum /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/tmp.tgz
+319 verbose tar unpack /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/tmp.tgz
+320 silly lockFile 0e07e7f4-58239-0-7516693647485226-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package
+321 verbose lock /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package /Users/zsheffer/.npm/0e07e7f4-58239-0-7516693647485226-package.lock
+322 silly lockFile 5374b855-58239-0-7516693647485226-tmp-tgz /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/tmp.tgz
+323 verbose lock /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/tmp.tgz /Users/zsheffer/.npm/5374b855-58239-0-7516693647485226-tmp-tgz.lock
+324 silly gunzTarPerm modes [ '755', '644' ]
+325 silly gunzTarPerm extractEntry package.json
+326 silly gunzTarPerm extractEntry .npmignore
+327 silly gunzTarPerm extractEntry README.md
+328 silly gunzTarPerm extractEntry LICENSE
+329 silly gunzTarPerm extractEntry .gitattributes
+330 silly gunzTarPerm extractEntry bin/ionic
+331 silly gunzTarPerm extractEntry bin/testApp/package.json
+332 silly gunzTarPerm extractEntry bin/testApp/.npmignore
+333 silly gunzTarPerm extractEntry bin/testApp/README.md
+334 silly gunzTarPerm extractEntry bin/testApp/gulpfile.js
+335 silly gunzTarPerm extractEntry bin/testApp/ionic.project
+336 silly gunzTarPerm extractEntry bin/testApp/hooks/.npmignore
+337 silly gunzTarPerm extractEntry bin/testApp/hooks/README.md
+338 silly gunzTarPerm extractEntry bin/testApp/config.xml
+339 silly gunzTarPerm extractEntry bin/testApp/.bowerrc
+340 silly gunzTarPerm extractEntry bin/testApp/platforms/.npmignore
+341 silly gunzTarPerm extractEntry bin/testApp/plugins/.npmignore
+342 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/package.json
+343 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/README.md
+344 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/LICENSE
+345 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/.fetch.json
+346 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/RELEASENOTES.md
+347 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/doc/index.md
+348 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/plugin.xml
+349 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/src/ios/CDVLogger.h
+350 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/src/ios/CDVLogger.m
+351 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/src/ubuntu/console.cpp
+352 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/src/ubuntu/console.h
+353 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/src/wp/DebugConsole.cs
+354 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/www/console-via-logger.js
+355 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/www/logger.js
+356 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/package.json
+357 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/README.md
+358 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/LICENSE
+359 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/.fetch.json
+360 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/RELEASENOTES.md
+361 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/doc/index.md
+362 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/plugin.xml
+363 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/android/Device.java
+364 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/blackberry10/index.js
+365 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/firefoxos/DeviceProxy.js
+366 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/ios/CDVDevice.h
+367 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/ios/CDVDevice.m
+368 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/tizen/DeviceProxy.js
+369 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/ubuntu/device.js
+370 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/ubuntu/device.cpp
+371 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/ubuntu/device.h
+372 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/windows8/DeviceProxy.js
+373 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/wp/Device.cs
+374 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/www/device.js
+375 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/package.json
+376 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/README.md
+377 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/.fetch.json
+378 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/plugin.xml
+379 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/src/ios/CDVStatusBar.h
+380 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/src/ios/CDVStatusBar.m
+381 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/www/statusbar.js
+382 silly gunzTarPerm extractEntry bin/testApp/scss/_platform.scss
+383 silly gunzTarPerm extractEntry bin/testApp/scss/_action-sheet.scss
+384 silly gunzTarPerm extractEntry bin/testApp/scss/_badge.scss
+385 silly gunzTarPerm extractEntry bin/testApp/scss/_bar.scss
+386 silly gunzTarPerm extractEntry bin/testApp/scss/_button-bar.scss
+387 silly gunzTarPerm extractEntry bin/testApp/scss/_button.scss
+388 silly gunzTarPerm extractEntry bin/testApp/scss/_checkbox.scss
+389 silly gunzTarPerm extractEntry bin/testApp/scss/_form.scss
+390 silly gunzTarPerm extractEntry bin/testApp/scss/_grid.scss
+391 silly gunzTarPerm extractEntry bin/testApp/scss/_items.scss
+392 silly gunzTarPerm extractEntry bin/testApp/scss/_list.scss
+393 silly gunzTarPerm extractEntry bin/testApp/scss/_menu.scss
+394 silly gunzTarPerm extractEntry bin/testApp/scss/_mixins.scss
+395 silly gunzTarPerm extractEntry bin/testApp/scss/_modal.scss
+396 silly gunzTarPerm extractEntry bin/testApp/scss/_animations.scss
+397 silly gunzTarPerm extractEntry bin/testApp/scss/_popup.scss
+398 silly gunzTarPerm extractEntry bin/testApp/scss/_radio.scss
+399 silly gunzTarPerm extractEntry bin/testApp/scss/_range.scss
+400 silly gunzTarPerm extractEntry bin/testApp/scss/_reset.scss
+401 silly gunzTarPerm extractEntry bin/testApp/scss/_scaffolding.scss
+402 silly gunzTarPerm extractEntry bin/testApp/scss/_slide-box.scss
+403 silly gunzTarPerm extractEntry bin/testApp/scss/_split-pane.scss
+404 silly gunzTarPerm extractEntry bin/testApp/scss/_tabs.scss
+405 silly gunzTarPerm extractEntry bin/testApp/scss/_toggle.scss
+406 silly gunzTarPerm extractEntry bin/testApp/scss/_type.scss
+407 silly gunzTarPerm extractEntry bin/testApp/scss/_util.scss
+408 silly gunzTarPerm extractEntry bin/testApp/scss/_variables.scss
+409 silly gunzTarPerm extractEntry bin/testApp/scss/ionic.scss
+410 silly gunzTarPerm extractEntry bin/testApp/scss/ionicons/_ionicons-animation.scss
+411 silly gunzTarPerm extractEntry bin/testApp/scss/ionicons/_ionicons-font.scss
+412 silly gunzTarPerm extractEntry bin/testApp/scss/ionicons/_ionicons-icons.scss
+413 silly gunzTarPerm extractEntry bin/testApp/scss/ionicons/_ionicons-variables.scss
+414 silly gunzTarPerm extractEntry bin/testApp/scss/ionicons/ionicons.scss
+415 silly gunzTarPerm extractEntry bin/testApp/www/.npmignore
+416 silly gunzTarPerm extractEntry bin/testApp/www/config.xml
+417 silly gunzTarPerm extractEntry bin/testApp/www/css/app.css
+418 silly gunzTarPerm extractEntry bin/testApp/www/img/ionic.png
+419 silly gunzTarPerm extractEntry bin/testApp/www/index.html
+420 silly gunzTarPerm extractEntry bin/testApp/www/js/app.js
+421 silly gunzTarPerm extractEntry bin/testApp/www/js/controllers.js
+422 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/README.md
+423 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/angular.js
+424 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/angular.min.js
+425 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/.bower.json
+426 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/angular-csp.css
+427 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/angular.min.js.gzip
+428 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/angular.min.js.map
+429 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/bower.json
+430 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/README.md
+431 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/angular-animate.js
+432 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/angular-animate.min.js
+433 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/.bower.json
+434 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/angular-animate.min.js.map
+435 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/bower.json
+436 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/README.md
+437 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/angular-sanitize.js
+438 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/angular-sanitize.min.js
+439 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/.bower.json
+440 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/angular-sanitize.min.js.map
+441 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/bower.json
+442 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/package.json
+443 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/.npmignore
+444 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/README.md
+445 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/LICENSE
+446 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/Gruntfile.js
+447 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/component.json
+448 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/bower.json
+449 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/.travis.yml
+450 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/config/jsdoc.js
+451 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/config/karma.js
+452 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/lib/angular-1.1.5.js
+453 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/.bower.json
+454 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/angular-ui-router.js
+455 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/angular-ui-router.min.js
+456 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/index.html
+457 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/$resolve.html
+458 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/$urlMatcherFactory.html
+459 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/UrlMatcher.html
+460 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/common.js.html
+461 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/global.html
+462 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/$templateFactory.html
+463 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/resolve.js.html
+464 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/scripts/linenumber.js
+465 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/scripts/prettify/lang-css.js
+466 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/scripts/prettify/prettify.js
+467 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/scripts/prettify/Apache-License-2.0.txt
+468 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/styles/jsdoc-default.css
+469 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/styles/prettify-jsdoc.css
+470 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/styles/prettify-tomorrow.css
+471 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/templateFactory.js.html
+472 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/urlMatcherFactory.js.html
+473 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/factory.js
+474 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/module.js
+475 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/states.js
+476 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.list.html
+477 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.html
+478 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.json
+479 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.detail.html
+480 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/bootstrap.min.css
+481 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/index.html
+482 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.detail.item.edit.html
+483 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.detail.item.html
+484 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/styles.css
+485 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/common.js
+486 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/resolve.js
+487 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/state.js
+488 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/stateDirectives.js
+489 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/compat.js
+490 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/templateFactory.js
+491 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/urlMatcherFactory.js
+492 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/urlRouter.js
+493 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/view.js
+494 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/viewDirective.js
+495 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/stateFilters.js
+496 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/viewDirectiveSpec.js
+497 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/urlRouterSpec.js
+498 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/resolveSpec.js
+499 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/stateDirectivesSpec.js
+500 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/stateFiltersSpec.js
+501 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/debug.js
+502 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/templateFactorySpec.js
+503 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/testUtils.js
+504 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/urlMatcherFactorySpec.js
+505 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/stateSpec.js
+506 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/lib/angular-mocks-1.1.5.js
+507 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/compat/matchers.js
+508 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/compat/routeParamsSpec.js
+509 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/compat/routeSpec.js
+510 silly gunzTarPerm extractEntry bin/testApp/www/lib/css/ionic.css
+511 silly gunzTarPerm extractEntry bin/testApp/www/lib/css/ionic.min.css
+512 silly gunzTarPerm extractEntry bin/testApp/www/lib/fonts/ionicons.eot
+513 silly gunzTarPerm extractEntry bin/testApp/www/lib/fonts/ionicons.svg
+514 silly gunzTarPerm extractEntry bin/testApp/www/lib/fonts/ionicons.ttf
+515 silly gunzTarPerm extractEntry bin/testApp/www/lib/fonts/ionicons.woff
+516 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/README.md
+517 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/.bower.json
+518 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/bower.json
+519 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/css/ionic.css
+520 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/css/ionic.min.css
+521 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/fonts/ionicons.eot
+522 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/fonts/ionicons.svg
+523 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/fonts/ionicons.ttf
+524 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/fonts/ionicons.woff
+525 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/ionic-angular.js
+526 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/ionic-angular.min.js
+527 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/ionic.js
+528 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/ionic.min.js
+529 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/dist/js/ionic-angular.js
+530 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/dist/js/ionic.bundle.js
+531 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/dist/js/ionic.js
+532 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_platform.scss
+533 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_action-sheet.scss
+534 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_badge.scss
+535 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_bar.scss
+536 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_button-bar.scss
+537 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_button.scss
+538 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_checkbox.scss
+539 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_form.scss
+540 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_grid.scss
+541 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_items.scss
+542 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_list.scss
+543 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_menu.scss
+544 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_mixins.scss
+545 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_modal.scss
+546 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_animations.scss
+547 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_popup.scss
+548 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_radio.scss
+549 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_range.scss
+550 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_reset.scss
+551 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_scaffolding.scss
+552 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_slide-box.scss
+553 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_split-pane.scss
+554 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_tabs.scss
+555 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_toggle.scss
+556 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_type.scss
+557 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_util.scss
+558 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_variables.scss
+559 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionic.scss
+560 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionicons/_ionicons-animation.scss
+561 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionicons/_ionicons-font.scss
+562 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionicons/_ionicons-icons.scss
+563 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionicons/_ionicons-variables.scss
+564 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionicons/ionicons.scss
+565 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic-angular.js
+566 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic-angular.min.js
+567 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic.bundle.js
+568 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic.bundle.min.js
+569 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic.js
+570 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic.min.js
+571 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-animate.js
+572 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-touch.min.js
+573 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-loader.js
+574 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-loader.min.js
+575 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular.js
+576 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-mocks.js
+577 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-resource.js
+578 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-resource.min.js
+579 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-scenario.js
+580 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-route.js
+581 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-cookies.min.js
+582 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-animate.min.js
+583 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-cookies.js
+584 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-sanitize.min.js
+585 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular.min.js
+586 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-sanitize.js
+587 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-touch.js
+588 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-route.min.js
+589 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-cookies.min.js.map
+590 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-route.min.js.map
+591 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-resource.min.js.map
+592 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-loader.min.js.map
+593 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-csp.css
+594 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-touch.min.js.map
+595 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-sanitize.min.js.map
+596 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-animate.min.js.map
+597 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular.min.js.map
+598 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/errors.json
+599 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/version.json
+600 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/version.txt
+601 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular-ui/angular-ui-router.js
+602 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular-ui/angular-ui-router.min.js
+603 silly gunzTarPerm extractEntry bin/testApp/www/lib/version.json
+604 silly gunzTarPerm extractEntry bin/testApp/www/templates/tab-account.html
+605 silly gunzTarPerm extractEntry bin/testApp/www/templates/tab-dash.html
+606 silly gunzTarPerm extractEntry bin/testApp/www/templates/tab-friends.html
+607 silly gunzTarPerm extractEntry bin/testApp/www/templates/tabs.html
+608 silly gunzTarPerm extractEntry lib/ionic.js
+609 silly gunzTarPerm extractEntry lib/ionic/build.js
+610 silly gunzTarPerm extractEntry lib/ionic/emulate.js
+611 silly gunzTarPerm extractEntry lib/ionic/login.js
+612 silly gunzTarPerm extractEntry lib/ionic/package.js
+613 silly gunzTarPerm extractEntry lib/ionic/platform.js
+614 silly gunzTarPerm extractEntry lib/ionic/config.js
+615 silly gunzTarPerm extractEntry lib/ionic/run.js
+616 silly gunzTarPerm extractEntry lib/ionic/start.js
+617 silly gunzTarPerm extractEntry lib/ionic/stats.js
+618 silly gunzTarPerm extractEntry lib/ionic/task.js
+619 silly gunzTarPerm extractEntry lib/ionic/upload.js
+620 silly gunzTarPerm extractEntry lib/ionic/project.js
+621 verbose read json /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package/package.json
+622 silly lockFile 0e07e7f4-58239-0-7516693647485226-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package
+623 silly lockFile 0e07e7f4-58239-0-7516693647485226-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package
+624 silly lockFile 5374b855-58239-0-7516693647485226-tmp-tgz /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/tmp.tgz
+625 silly lockFile 5374b855-58239-0-7516693647485226-tmp-tgz /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/tmp.tgz
+626 verbose from cache /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package/package.json
+627 verbose tar pack [ '/Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz',
+627 verbose tar pack   '/var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package' ]
+628 verbose tarball /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+629 verbose folder /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package
+630 silly lockFile 0e07e7f4-58239-0-7516693647485226-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package
+631 verbose lock /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package /Users/zsheffer/.npm/0e07e7f4-58239-0-7516693647485226-package.lock
+632 silly lockFile dd3e6bfe-m-ionic-1-0-0-beta-1-package-tgz /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+633 verbose lock /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz /Users/zsheffer/.npm/dd3e6bfe-m-ionic-1-0-0-beta-1-package-tgz.lock
+634 silly lockFile 0e07e7f4-58239-0-7516693647485226-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package
+635 silly lockFile 0e07e7f4-58239-0-7516693647485226-package /var/folders/7n/9h7397y94nd22h7dwhs9vz480000gn/T/npm-5355/1395945758239-0.7516693647485226/package
+636 silly lockFile dd3e6bfe-m-ionic-1-0-0-beta-1-package-tgz /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+637 silly lockFile dd3e6bfe-m-ionic-1-0-0-beta-1-package-tgz /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+638 silly lockFile ff3e329f-r-npm-ionic-1-0-0-beta-1-package /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package
+639 verbose lock /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package /Users/zsheffer/.npm/ff3e329f-r-npm-ionic-1-0-0-beta-1-package.lock
+640 silly lockFile ff3e329f-r-npm-ionic-1-0-0-beta-1-package /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package
+641 silly lockFile ff3e329f-r-npm-ionic-1-0-0-beta-1-package /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package
+642 verbose tar unpack /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+643 silly lockFile ff3e329f-r-npm-ionic-1-0-0-beta-1-package /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package
+644 verbose lock /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package /Users/zsheffer/.npm/ff3e329f-r-npm-ionic-1-0-0-beta-1-package.lock
+645 silly lockFile dd3e6bfe-m-ionic-1-0-0-beta-1-package-tgz /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+646 verbose lock /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz /Users/zsheffer/.npm/dd3e6bfe-m-ionic-1-0-0-beta-1-package-tgz.lock
+647 silly gunzTarPerm modes [ '755', '644' ]
+648 silly gunzTarPerm extractEntry package.json
+649 silly gunzTarPerm extractEntry .npmignore
+650 silly gunzTarPerm extractEntry README.md
+651 silly gunzTarPerm extractEntry LICENSE
+652 silly gunzTarPerm extractEntry .gitattributes
+653 silly gunzTarPerm extractEntry bin/ionic
+654 silly gunzTarPerm extractEntry bin/testApp/package.json
+655 silly gunzTarPerm extractEntry bin/testApp/.npmignore
+656 silly gunzTarPerm extractEntry bin/testApp/README.md
+657 silly gunzTarPerm extractEntry bin/testApp/gulpfile.js
+658 silly gunzTarPerm extractEntry bin/testApp/hooks/.npmignore
+659 silly gunzTarPerm extractEntry bin/testApp/hooks/README.md
+660 silly gunzTarPerm extractEntry bin/testApp/ionic.project
+661 silly gunzTarPerm extractEntry bin/testApp/config.xml
+662 silly gunzTarPerm extractEntry bin/testApp/platforms/.npmignore
+663 silly gunzTarPerm extractEntry bin/testApp/plugins/.npmignore
+664 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/package.json
+665 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/README.md
+666 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/LICENSE
+667 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/.fetch.json
+668 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/doc/index.md
+669 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/plugin.xml
+670 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/RELEASENOTES.md
+671 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/src/ios/CDVLogger.h
+672 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/src/ios/CDVLogger.m
+673 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/src/ubuntu/console.cpp
+674 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/src/ubuntu/console.h
+675 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/src/wp/DebugConsole.cs
+676 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/www/console-via-logger.js
+677 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.console/www/logger.js
+678 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/package.json
+679 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/README.md
+680 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/LICENSE
+681 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/.fetch.json
+682 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/doc/index.md
+683 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/plugin.xml
+684 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/RELEASENOTES.md
+685 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/android/Device.java
+686 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/blackberry10/index.js
+687 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/firefoxos/DeviceProxy.js
+688 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/ios/CDVDevice.h
+689 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/ios/CDVDevice.m
+690 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/tizen/DeviceProxy.js
+691 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/ubuntu/device.js
+692 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/ubuntu/device.cpp
+693 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/ubuntu/device.h
+694 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/windows8/DeviceProxy.js
+695 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/src/wp/Device.cs
+696 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.device/www/device.js
+697 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/package.json
+698 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/README.md
+699 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/.fetch.json
+700 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/plugin.xml
+701 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/src/ios/CDVStatusBar.h
+702 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/src/ios/CDVStatusBar.m
+703 silly gunzTarPerm extractEntry bin/testApp/plugins/org.apache.cordova.statusbar/www/statusbar.js
+704 silly gunzTarPerm extractEntry bin/testApp/.bowerrc
+705 silly gunzTarPerm extractEntry bin/testApp/scss/_platform.scss
+706 silly gunzTarPerm extractEntry bin/testApp/scss/_action-sheet.scss
+707 silly gunzTarPerm extractEntry bin/testApp/scss/_badge.scss
+708 silly gunzTarPerm extractEntry bin/testApp/scss/_bar.scss
+709 silly gunzTarPerm extractEntry bin/testApp/scss/_button-bar.scss
+710 silly gunzTarPerm extractEntry bin/testApp/scss/_button.scss
+711 silly gunzTarPerm extractEntry bin/testApp/scss/_checkbox.scss
+712 silly gunzTarPerm extractEntry bin/testApp/scss/_form.scss
+713 silly gunzTarPerm extractEntry bin/testApp/scss/_grid.scss
+714 silly gunzTarPerm extractEntry bin/testApp/scss/_items.scss
+715 silly gunzTarPerm extractEntry bin/testApp/scss/_list.scss
+716 silly gunzTarPerm extractEntry bin/testApp/scss/_menu.scss
+717 silly gunzTarPerm extractEntry bin/testApp/scss/_mixins.scss
+718 silly gunzTarPerm extractEntry bin/testApp/scss/_modal.scss
+719 silly gunzTarPerm extractEntry bin/testApp/scss/_animations.scss
+720 silly gunzTarPerm extractEntry bin/testApp/scss/_popup.scss
+721 silly gunzTarPerm extractEntry bin/testApp/scss/_radio.scss
+722 silly gunzTarPerm extractEntry bin/testApp/scss/_range.scss
+723 silly gunzTarPerm extractEntry bin/testApp/scss/_reset.scss
+724 silly gunzTarPerm extractEntry bin/testApp/scss/_scaffolding.scss
+725 silly gunzTarPerm extractEntry bin/testApp/scss/_slide-box.scss
+726 silly gunzTarPerm extractEntry bin/testApp/scss/_split-pane.scss
+727 silly gunzTarPerm extractEntry bin/testApp/scss/_tabs.scss
+728 silly gunzTarPerm extractEntry bin/testApp/scss/_toggle.scss
+729 silly gunzTarPerm extractEntry bin/testApp/scss/_type.scss
+730 silly gunzTarPerm extractEntry bin/testApp/scss/_util.scss
+731 silly gunzTarPerm extractEntry bin/testApp/scss/_variables.scss
+732 silly gunzTarPerm extractEntry bin/testApp/scss/ionic.scss
+733 silly gunzTarPerm extractEntry bin/testApp/scss/ionicons/_ionicons-animation.scss
+734 silly gunzTarPerm extractEntry bin/testApp/scss/ionicons/_ionicons-font.scss
+735 silly gunzTarPerm extractEntry bin/testApp/scss/ionicons/_ionicons-icons.scss
+736 silly gunzTarPerm extractEntry bin/testApp/scss/ionicons/_ionicons-variables.scss
+737 silly gunzTarPerm extractEntry bin/testApp/scss/ionicons/ionicons.scss
+738 silly gunzTarPerm extractEntry bin/testApp/www/.npmignore
+739 silly gunzTarPerm extractEntry bin/testApp/www/config.xml
+740 silly gunzTarPerm extractEntry bin/testApp/www/css/app.css
+741 silly gunzTarPerm extractEntry bin/testApp/www/img/ionic.png
+742 silly gunzTarPerm extractEntry bin/testApp/www/index.html
+743 silly gunzTarPerm extractEntry bin/testApp/www/js/app.js
+744 silly gunzTarPerm extractEntry bin/testApp/www/js/controllers.js
+745 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/README.md
+746 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/angular.js
+747 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/angular.min.js
+748 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/.bower.json
+749 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/angular-csp.css
+750 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/angular.min.js.gzip
+751 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/angular.min.js.map
+752 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular/bower.json
+753 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/README.md
+754 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/angular-animate.js
+755 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/angular-animate.min.js
+756 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/.bower.json
+757 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/angular-animate.min.js.map
+758 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-animate/bower.json
+759 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/README.md
+760 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/angular-sanitize.js
+761 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/angular-sanitize.min.js
+762 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/.bower.json
+763 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/angular-sanitize.min.js.map
+764 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-sanitize/bower.json
+765 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/package.json
+766 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/.npmignore
+767 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/README.md
+768 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/LICENSE
+769 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/Gruntfile.js
+770 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/lib/angular-1.1.5.js
+771 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/.bower.json
+772 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/.travis.yml
+773 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/bower.json
+774 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/component.json
+775 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/config/jsdoc.js
+776 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/config/karma.js
+777 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/angular-ui-router.js
+778 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/angular-ui-router.min.js
+779 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/resolve.js.html
+780 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/$resolve.html
+781 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/$urlMatcherFactory.html
+782 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/common.js.html
+783 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/global.html
+784 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/index.html
+785 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/$templateFactory.html
+786 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/scripts/linenumber.js
+787 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/scripts/prettify/lang-css.js
+788 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/scripts/prettify/prettify.js
+789 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/scripts/prettify/Apache-License-2.0.txt
+790 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/styles/jsdoc-default.css
+791 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/styles/prettify-jsdoc.css
+792 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/styles/prettify-tomorrow.css
+793 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/templateFactory.js.html
+794 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/UrlMatcher.html
+795 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/release/doc/urlMatcherFactory.js.html
+796 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/factory.js
+797 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/module.js
+798 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/states.js
+799 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.list.html
+800 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.html
+801 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.json
+802 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.detail.html
+803 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/bootstrap.min.css
+804 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/index.html
+805 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.detail.item.edit.html
+806 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/contacts.detail.item.html
+807 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/sample/styles.css
+808 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/common.js
+809 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/resolve.js
+810 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/state.js
+811 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/stateDirectives.js
+812 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/compat.js
+813 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/templateFactory.js
+814 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/urlMatcherFactory.js
+815 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/urlRouter.js
+816 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/view.js
+817 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/viewDirective.js
+818 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/src/stateFilters.js
+819 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/viewDirectiveSpec.js
+820 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/urlRouterSpec.js
+821 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/resolveSpec.js
+822 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/stateDirectivesSpec.js
+823 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/stateFiltersSpec.js
+824 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/debug.js
+825 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/templateFactorySpec.js
+826 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/testUtils.js
+827 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/urlMatcherFactorySpec.js
+828 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/stateSpec.js
+829 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/lib/angular-mocks-1.1.5.js
+830 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/compat/matchers.js
+831 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/compat/routeParamsSpec.js
+832 silly gunzTarPerm extractEntry bin/testApp/www/lib/angular-ui-router/test/compat/routeSpec.js
+833 silly gunzTarPerm extractEntry bin/testApp/www/lib/css/ionic.css
+834 silly gunzTarPerm extractEntry bin/testApp/www/lib/css/ionic.min.css
+835 silly gunzTarPerm extractEntry bin/testApp/www/lib/fonts/ionicons.eot
+836 silly gunzTarPerm extractEntry bin/testApp/www/lib/fonts/ionicons.svg
+837 silly gunzTarPerm extractEntry bin/testApp/www/lib/fonts/ionicons.ttf
+838 silly gunzTarPerm extractEntry bin/testApp/www/lib/fonts/ionicons.woff
+839 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/README.md
+840 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/.bower.json
+841 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/bower.json
+842 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/css/ionic.css
+843 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/css/ionic.min.css
+844 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/fonts/ionicons.eot
+845 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/fonts/ionicons.svg
+846 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/fonts/ionicons.ttf
+847 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/fonts/ionicons.woff
+848 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/ionic-angular.js
+849 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/ionic-angular.min.js
+850 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/ionic.js
+851 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/ionic.min.js
+852 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/dist/js/ionic-angular.js
+853 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/dist/js/ionic.bundle.js
+854 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/js/dist/js/ionic.js
+855 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_platform.scss
+856 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_action-sheet.scss
+857 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_badge.scss
+858 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_bar.scss
+859 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_button-bar.scss
+860 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_button.scss
+861 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_checkbox.scss
+862 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_form.scss
+863 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_grid.scss
+864 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_items.scss
+865 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_list.scss
+866 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_menu.scss
+867 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_mixins.scss
+868 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_modal.scss
+869 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_animations.scss
+870 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_popup.scss
+871 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_radio.scss
+872 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_range.scss
+873 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_reset.scss
+874 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_scaffolding.scss
+875 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_slide-box.scss
+876 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_split-pane.scss
+877 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_tabs.scss
+878 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_toggle.scss
+879 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_type.scss
+880 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_util.scss
+881 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/_variables.scss
+882 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionic.scss
+883 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionicons/_ionicons-animation.scss
+884 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionicons/_ionicons-font.scss
+885 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionicons/_ionicons-icons.scss
+886 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionicons/_ionicons-variables.scss
+887 silly gunzTarPerm extractEntry bin/testApp/www/lib/ionic/scss/ionicons/ionicons.scss
+888 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic-angular.js
+889 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic-angular.min.js
+890 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic.bundle.js
+891 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic.bundle.min.js
+892 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic.js
+893 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/ionic.min.js
+894 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-animate.js
+895 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-touch.min.js
+896 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-loader.js
+897 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-loader.min.js
+898 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular.js
+899 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-mocks.js
+900 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-resource.js
+901 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-resource.min.js
+902 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-scenario.js
+903 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-route.js
+904 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-cookies.min.js
+905 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-animate.min.js
+906 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-cookies.js
+907 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-sanitize.min.js
+908 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular.min.js
+909 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-sanitize.js
+910 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-touch.js
+911 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-route.min.js
+912 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-cookies.min.js.map
+913 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-route.min.js.map
+914 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-resource.min.js.map
+915 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-loader.min.js.map
+916 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-csp.css
+917 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-touch.min.js.map
+918 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-sanitize.min.js.map
+919 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular-animate.min.js.map
+920 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/angular.min.js.map
+921 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/errors.json
+922 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/version.json
+923 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular/version.txt
+924 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular-ui/angular-ui-router.js
+925 silly gunzTarPerm extractEntry bin/testApp/www/lib/js/angular-ui/angular-ui-router.min.js
+926 silly gunzTarPerm extractEntry bin/testApp/www/lib/version.json
+927 silly gunzTarPerm extractEntry bin/testApp/www/templates/tab-account.html
+928 silly gunzTarPerm extractEntry bin/testApp/www/templates/tab-dash.html
+929 silly gunzTarPerm extractEntry bin/testApp/www/templates/tab-friends.html
+930 silly gunzTarPerm extractEntry bin/testApp/www/templates/tabs.html
+931 silly gunzTarPerm extractEntry lib/ionic.js
+932 silly gunzTarPerm extractEntry lib/ionic/build.js
+933 silly gunzTarPerm extractEntry lib/ionic/emulate.js
+934 silly gunzTarPerm extractEntry lib/ionic/login.js
+935 silly gunzTarPerm extractEntry lib/ionic/package.js
+936 silly gunzTarPerm extractEntry lib/ionic/platform.js
+937 silly gunzTarPerm extractEntry lib/ionic/config.js
+938 silly gunzTarPerm extractEntry lib/ionic/run.js
+939 silly gunzTarPerm extractEntry lib/ionic/start.js
+940 silly gunzTarPerm extractEntry lib/ionic/stats.js
+941 silly gunzTarPerm extractEntry lib/ionic/task.js
+942 silly gunzTarPerm extractEntry lib/ionic/upload.js
+943 silly gunzTarPerm extractEntry lib/ionic/project.js
+944 verbose read json /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package/package.json
+945 silly lockFile ff3e329f-r-npm-ionic-1-0-0-beta-1-package /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package
+946 silly lockFile ff3e329f-r-npm-ionic-1-0-0-beta-1-package /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package
+947 silly lockFile dd3e6bfe-m-ionic-1-0-0-beta-1-package-tgz /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+948 silly lockFile dd3e6bfe-m-ionic-1-0-0-beta-1-package-tgz /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+949 silly shasum updated bytes 40960
+950 silly shasum updated bytes 40960
+951 silly shasum updated bytes 40960
+952 silly shasum updated bytes 40960
+953 silly shasum updated bytes 40960
+954 silly shasum updated bytes 40960
+955 silly shasum updated bytes 40960
+956 silly shasum updated bytes 40960
+957 silly shasum updated bytes 40960
+958 silly shasum updated bytes 40960
+959 silly shasum updated bytes 40960
+960 silly shasum updated bytes 40960
+961 silly shasum updated bytes 40960
+962 silly shasum updated bytes 40960
+963 silly shasum updated bytes 40960
+964 silly shasum updated bytes 40960
+965 silly shasum updated bytes 40960
+966 silly shasum updated bytes 40960
+967 silly shasum updated bytes 40960
+968 silly shasum updated bytes 40960
+969 silly shasum updated bytes 40960
+970 silly shasum updated bytes 40960
+971 silly shasum updated bytes 40960
+972 silly shasum updated bytes 40960
+973 silly shasum updated bytes 40960
+974 silly shasum updated bytes 40960
+975 silly shasum updated bytes 40960
+976 silly shasum updated bytes 40960
+977 silly shasum updated bytes 40960
+978 silly shasum updated bytes 40960
+979 silly shasum updated bytes 40960
+980 silly shasum updated bytes 40960
+981 silly shasum updated bytes 40960
+982 silly shasum updated bytes 40960
+983 silly shasum updated bytes 40960
+984 silly shasum updated bytes 40960
+985 silly shasum updated bytes 40960
+986 silly shasum updated bytes 40960
+987 silly shasum updated bytes 40960
+988 silly shasum updated bytes 40960
+989 silly shasum updated bytes 40960
+990 silly shasum updated bytes 40960
+991 silly shasum updated bytes 40960
+992 silly shasum updated bytes 40960
+993 silly shasum updated bytes 40960
+994 silly shasum updated bytes 40960
+995 silly shasum updated bytes 40960
+996 silly shasum updated bytes 40960
+997 silly shasum updated bytes 40960
+998 silly shasum updated bytes 40960
+999 silly shasum updated bytes 40960
+1000 silly shasum updated bytes 40960
+1001 silly shasum updated bytes 40960
+1002 silly shasum updated bytes 40960
+1003 silly shasum updated bytes 40960
+1004 silly shasum updated bytes 40960
+1005 silly shasum updated bytes 40960
+1006 silly shasum updated bytes 40960
+1007 silly shasum updated bytes 40960
+1008 silly shasum updated bytes 40960
+1009 silly shasum updated bytes 40960
+1010 silly shasum updated bytes 40960
+1011 silly shasum updated bytes 40960
+1012 silly shasum updated bytes 40960
+1013 silly shasum updated bytes 40960
+1014 silly shasum updated bytes 40960
+1015 silly shasum updated bytes 40960
+1016 silly shasum updated bytes 40960
+1017 silly shasum updated bytes 40960
+1018 silly shasum updated bytes 40960
+1019 silly shasum updated bytes 40960
+1020 silly shasum updated bytes 40960
+1021 silly shasum updated bytes 40960
+1022 silly shasum updated bytes 40960
+1023 silly shasum updated bytes 40960
+1024 silly shasum updated bytes 40960
+1025 silly shasum updated bytes 40960
+1026 silly shasum updated bytes 40792
+1027 info shasum 3beba06b619089cc07343298204554bc826e3a9a
+1027 info shasum /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+1028 verbose from cache /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package/package.json
+1029 verbose chmod /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz 644
+1030 verbose chown /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz [ 501, 20 ]
+1031 silly lockFile 4dacd3ca-org-ionic-ionic-1-0-0-beta-1-tgz https://registry.npmjs.org/ionic/-/ionic-1.0.0-beta.1.tgz
+1032 silly lockFile 4dacd3ca-org-ionic-ionic-1-0-0-beta-1-tgz https://registry.npmjs.org/ionic/-/ionic-1.0.0-beta.1.tgz
+1033 silly lockFile 7b9f9769-ionic-1-0-0-beta-1 ionic@1.0.0-beta.1
+1034 silly lockFile 7b9f9769-ionic-1-0-0-beta-1 ionic@1.0.0-beta.1
+1035 silly lockFile 966fc04a-ionic ionic@
+1036 silly lockFile 966fc04a-ionic ionic@
+1037 silly resolved [ { name: 'cordova',
+1037 silly resolved     version: '2.8.15',
+1037 silly resolved     preferGlobal: 'true',
+1037 silly resolved     description: 'Cordova command line interface tool',
+1037 silly resolved     main: 'cordova',
+1037 silly resolved     engines: { node: '>=0.9.9' },
+1037 silly resolved     bin: { cordova: './bin/cordova' },
+1037 silly resolved     scripts: { test: 'node test_runner.js', install: 'node bootstrap.js' },
+1037 silly resolved     repository:
+1037 silly resolved      { type: 'git',
+1037 silly resolved        url: 'https://git-wip-us.apache.org/repos/asf/cordova-cli.git' },
+1037 silly resolved     keywords: [ 'cordova', 'client', 'cli' ],
+1037 silly resolved     dependencies:
+1037 silly resolved      { colors: '>=0.6.0',
+1037 silly resolved        elementtree: '0.1.3',
+1037 silly resolved        plugman: '0.7.9',
+1037 silly resolved        plist: '0.4.x',
+1037 silly resolved        xcode: '0.5.1',
+1037 silly resolved        express: '3.0',
+1037 silly resolved        shelljs: '0.1.2',
+1037 silly resolved        ncallbacks: '1.0.0',
+1037 silly resolved        request: '2.11.4',
+1037 silly resolved        semver: '1.1.0',
+1037 silly resolved        prompt: '0.2.7',
+1037 silly resolved        'ripple-emulator': '>=0.9.15',
+1037 silly resolved        open: '0.0.3' },
+1037 silly resolved     devDependencies: { 'jasmine-node': '1.8.x' },
+1037 silly resolved     author: { name: 'Anis Kadri' },
+1037 silly resolved     contributors:
+1037 silly resolved      [ [Object],
+1037 silly resolved        [Object],
+1037 silly resolved        [Object],
+1037 silly resolved        [Object],
+1037 silly resolved        [Object],
+1037 silly resolved        [Object],
+1037 silly resolved        [Object],
+1037 silly resolved        [Object],
+1037 silly resolved        [Object],
+1037 silly resolved        [Object] ],
+1037 silly resolved     license: 'Apache version 2.0',
+1037 silly resolved     readme: '# cordova-cli\n\n> The command line tool to build, deploy and manage [Cordova](http://cordova.io)-based applications.\n\n[Apache Cordova](http://cordova.io) allows for building native mobile applications using HTML, CSS and JavaScript. Check out the [Getting Started guides](http://cordova.apache.org/docs/en/edge/guide_getting-started_index.md.html#Getting%20Started%20Guides) for more details on how to work with Cordova sub-projects.\n\n# Requirements\n\n* [nodejs](http://nodejs.org/)\n* SDKs for every platform you wish to support\n  - BlackBerry 10: [BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/download/) as well as the [BlackBerry 10 NDK](http://developer.blackberry.com/native/download/). You will also need to have the NDK environment variables on your path by running `bb10ndk/bbndk-env.sh`.\n  - iOS: [iOS SDK](http://developer.apple.com) with the latest Xcode and Xcode Command Line Tools\n  - [Android SDK](http://developer.android.com) - **NOTE** This tool\n    will not work unless you have the absolute latest updates for all\n    Android SDK components. Also you will need the SDK\'s `tools` and `platform-tools` directories on your __system path__ otherwise Android support will fail.\n\ncordova-cli has been tested on Mas OS X, Linux, Windows 7 and Windows 8.\n\n# Install\n\n    npm install -g cordova\n\n**NOTE**: on Unix-based machines, you may want to change the owner of the cordova directory that npm installs to. This will allow you to run cordova as local user without requiring root permissions. Assuming your node_modules directory is in `/usr/local/lib/`, you can do this by running: \n\n    sudo chown -R <username> /usr/local/lib/node_modules/cordova\n\n# Getting Started\n\ncordova-cli has a single global `create` command that creates new cordova projects into a specified directory. Once you create a project, `cd` into it and you can execute a variety of project-level commands. Completely inspired by git\'s interface.\n\n## Global Command\n\n- `create <directory> [<id> [<name>]]` create a new cordova project with optional name and id (package name, reverse-domain style)\n\n<a name="project_commands" />\n## Project Commands\n\n- `platform [ls | list]` list all platforms the project will build to\n- `platform add <platform> [<platform> ...]` add one (or more) platforms as a build target for the project\n- `platform [rm | remove] <platform> [<platform> ...]` removes one (or more) platforms as a build target for the project\n- `plugin [ls | list]` list all plugins added to the project\n- `plugin add <path-to-plugin> [<path-to-plugin> ...]` add one (or more) plugins to the project\n- `plugin [rm | remove] <plugin-name> [<plugin-name> ...]` remove one (or more) added plugins\n- `prepare [platform...]` copies files into the specified platforms, or all platforms. it is then ready for building by Eclipse/Xcode/etc.\n- `compile [platform...]` compiles the app into a binary for each added platform. With no parameters, builds for all platforms, otherwise builds for the specified platforms.\n- `build [<platform> [<platform> [...]]]` an alias for `cordova prepare` followed by `cordova compile`\n- `emulate [<platform> [<platform> [...]]]` launch emulators and deploy app to them. With no parameters emulates for all platforms added to the project, otherwise emulates for the specified platforms\n- `serve <platform> [port]` launch a local web server for that platform\'s www directory on the given port (default 8000).\n\n### Optional Flags\n\n- `-d` or `--verbose` will pipe out more verbose output to your shell. You can also subscribe to `log` and `warn` events if you are consuming cordova-cli as a node module by calling `cordova.on(\'log\', function() {})` or `cordova.on(\'warn\', function() {})`.\n\n# Project Directory Structure\nA Cordova application built with cordova-cli will have the following directory structure:\n\n    myApp/\n    |--.cordova/\n    |-- app/\n    | |-- merges/\n    | | |-- android/\n    | | |-- blackberry/\n    | | `-- ios/\n    | |-- www/\n    | `-- config.xml\n    |-- platforms/\n    | |-- android/\n    | |-- blackberry/\n    | `-- ios/\n    `-- plugins/\n\n## .cordova/\nThis directory identifies a tree as a cordova project. Simple configuration information is stored in here (such as BlackBerry environment variables).\n\nCommands other than `create` operate against the project directory itself, rather than the current directory - a search up the current directory\'s parents is made to find the project directory. Thus, any command (other than `create`) can be used from any subdirectory whose parent is a cordova project directory (same as git).\n\n## app/\n\nContains your app-specific content: its `www/` files, any `merges/`, and the `config.xml`. If you want to keep your app in source control, this directory should be the top of the repository.\n\n\n### app/merges/\nPlatform-specific web assets (HTML, CSS and JavaScript files) are contained within appropriate subfolders in this directory. These are deployed during a `prepare` to the appropriate native directory.  Files placed under `app/merges/` will override matching files in the `app/www/` folder for the relevant platform. A quick example, assuming a project structure of:\n\n    app/\n    |-- merges/\n    | |-- ios/\n    | | `-- app.js\n    | `-- android/\n    |   `-- android.js\n    `--www/\n      `-- app.js\n\nAfter building the Android and iOS projects, the Android application will contain both `app.js` and `android.js`. However, the iOS application will only contain an `app.js`, and it will be the one from `app/merges/ios/app.js`, overriding the "common" `app.js` located inside `app/www/`.\n\n### app/www/\nContains the project\'s web artifacts, such as .html, .css and .js files. These are your main application assets. They will be copied on a `cordova prepare` to each platform\'s www directory.\n\n### Your Blanket: app/config.xml\n\nThis file is what you should be editing to modify your application\'s metadata. Any time you run any cordova-cli commands, the tool will look at the contents of `config.xml` and use all relevant info from this file to define native application information. cordova-cli supports changing your application\'s data via the following elements inside the `config.xml` file:\n\n- The user-facing name can be modified via the contents of the `<name>` element.\n- The package name (AKA bundle identifier or application id) can be modified via the `id` attribute from the top-level `<widget>` element.\n- The whitelist can be modified using the `<access>` elements. Make sure the `origin` attribute of your `<access>` element points to a valid URL (you can use `*` as wildcard). For more information on the whitelisting syntax, see the [docs.phonegap.com](http://docs.phonegap.com/en/2.2.0/guide_whitelist_index.md.html#Domain%20Whitelist%20Guide). You can use either attribute `uri` ([BlackBerry-proprietary](https://developer.blackberry.com/html5/documentation/access_element_834677_11.html)) or `origin` ([standards-compliant](http://www.w3.org/TR/widgets-access/#attributes)) to denote the domain.\n- Platform-specific preferences can be customized via `<preference>` tags. See [docs.phonegap.com](http://docs.phonegap.com/en/2.3.0/guide_project-settings_index.md.html#Project%20Settings) for a list of preferences you can use.\n\n## platforms/\nPlatforms added to your application will have the native application project structures laid out within this directory.\n\n## plugins/\nAny added plugins will be extracted or copied into this directory.\n\n# Hooks\n\nProjects created by cordova-cli have `before` and `after` hooks for each [project command](#project_commands).\n\nThere are two types of hooks: project-specific ones and module-level ones. Both of these types of hooks receive the project root folder as a parameter.\n\n## Project-specific Hooks\n\nThese are located under the `.cordova/hooks` directory in the root of your cordova project. Any scripts you add to these directories will be executed before and after the appropriate commands. Useful for integrating your own build systems or integrating with version control systems. __Remember__: make your scripts executable.\n\n### Examples\n\n- [`before_build` hook for jade template compiling](https://gist.github.com/4100866) courtesy of [dpogue](http://github.com/dpogue)\n\n## Module-level Hooks\n\nIf you are using cordova-cli as a module within a larger node application, you can also use the standard `EventEmitter` methods to attach to the events. The events include `before_build`, `before_compile`, `before_docs`, `before_emulate`, `before_platform_add`, `before_platform_ls`, `before_platform_rm`, `before_plugin_add`, `before_plugin_ls`, `before_plugin_rm` and `before_prepare`. Additionally, there are `after_` flavours of all the above events.\n\nOnce you `require(\'cordova\')` in your node project, you will have the usual `EventEmitter` methods available (`on`, `off` or `removeListener`, and `emit` or `trigger`).\n\n# Examples\n\n## Creating a new cordova project\nThis example shows how to create a project from scratch named KewlApp with iOS and Android platform support, and includes a plugin named Kewlio. The project will live in ~/KewlApp\n\n    cordova create ~/KewlApp KewlApp\n    cd ~/KewlApp\n    cordova platform add ios android\n    cordova plugin add http://example.org/Kewlio-1.2.3.tar.gz\n    cordova build \n\nThe directory structure of KewlApp now looks like this:\n\n    KewlApp/\n    |-- .cordova/\n    |-- app/\n    | |-- merges/\n    | | |-- android/\n    | | `-- ios/\n    | `- www/\n    |    `-- index.html\n    |-- platforms/\n    | |-- android/\n    | | `-- …\n    | `-- ios/\n    |   `-- …\n    `-- plugins/\n      `-- Kewlio/\n\n# Contributing\n\n## Running Tests\n\n    npm test\n\n## TO-DO + Issues\n\nPlease check [Cordova issues with the CLI Component](http://issues.cordova.io). If you find issues with this tool, please be so kind as to include relevant information needed to debug issues such as:\n\n- Your operating system and version\n- The application name, directory location, and identifier used with `create`\n- Which mobile SDKs you have installed, and which version. Related to this: which Xcode version if you are submitting issues related to iOS\n- Any error stack traces you received\n\n## Contributors\n\nThanks to everyone for contributing! For a list of people involved, please see the `package.json` file.\n',
+1037 silly resolved     readmeFilename: 'README.md',
+1037 silly resolved     _id: 'cordova@2.8.15',
+1037 silly resolved     _from: 'cordova@' },
+1037 silly resolved   { name: 'gulp',
+1037 silly resolved     description: 'The streaming build system',
+1037 silly resolved     version: '3.4.0',
+1037 silly resolved     homepage: 'http://github.com/wearefractal/gulp',
+1037 silly resolved     repository: { type: 'git', url: 'git://github.com/wearefractal/gulp.git' },
+1037 silly resolved     author:
+1037 silly resolved      { name: 'Fractal',
+1037 silly resolved        email: 'contact@wearefractal.com',
+1037 silly resolved        url: 'http://wearefractal.com/' },
+1037 silly resolved     main: './index.js',
+1037 silly resolved     tags: [ 'build', 'stream', 'system' ],
+1037 silly resolved     bin: { gulp: './bin/gulp.js' },
+1037 silly resolved     dependencies:
+1037 silly resolved      { optimist: '~0.6.0',
+1037 silly resolved        'gulp-util': '~2.2.0',
+1037 silly resolved        orchestrator: '~0.3.0',
+1037 silly resolved        resolve: '~0.6.1',
+1037 silly resolved        'findup-sync': '~0.1.2',
+1037 silly resolved        'pretty-hrtime': '~0.2.0',
+1037 silly resolved        'vinyl-fs': '0.0.1',
+1037 silly resolved        semver: '~2.2.1',
+1037 silly resolved        archy: '0.0.2' },
+1037 silly resolved     devDependencies:
+1037 silly resolved      { mocha: '~1.17.0',
+1037 silly resolved        'mocha-lcov-reporter': '0.0.1',
+1037 silly resolved        coveralls: '~2.6.1',
+1037 silly resolved        istanbul: '~0.2.3',
+1037 silly resolved        should: '~2.1.1',
+1037 silly resolved        rimraf: '~2.2.5',
+1037 silly resolved        q: '~1.0.0',
+1037 silly resolved        jshint: '~2.4.1',
+1037 silly resolved        'graceful-fs': '~2.0.1',
+1037 silly resolved        'gulp-mocha': '~0.3.0',
+1037 silly resolved        'gulp-jshint': '~1.3.4' },
+1037 silly resolved     scripts:
+1037 silly resolved      { test: 'mocha --reporter spec && jshint ./*.js && jshint ./bin/*.js && jshint ./lib/*.js && jshint ./test/*.js',
+1037 silly resolved        coveralls: 'istanbul cover _mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | coveralls && rm -rf ./coverage' },
+1037 silly resolved     engines: { node: '>= 0.9' },
+1037 silly resolved     licenses: [ [Object] ],
+1037 silly resolved     readme: '<p align="center">\n  <a href="http://gulpjs.com">\n    <img height="194" width="98" src="https://raw.github.com/gulpjs/artwork/master/gulp.png"/>\n  </a>\n  <br/>\n  <a href="http://gulpjs.com/">Visit our website!</a>\n</p>\n\n# gulp [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coveralls Status][coveralls-image]][coveralls-url] [![Dependency Status](https://david-dm.org/gulpjs/gulp.png?theme=shields.io)](https://david-dm.org/gulpjs/gulp)\n> The streaming build system\n\n## Documentation\n\nFor a Getting started guide, API docs, recipes, making a plugin, etc. see the [documentation page](/docs/README.md)!\n\n## Sample gulpfile\n\nThis file is just a quick sample to give you a taste of what gulp does.\n\n```javascript\nvar gulp = require(\'gulp\');\nvar uglify = require(\'gulp-uglify\');\nvar imagemin = require(\'gulp-imagemin\');\n\ngulp.task(\'scripts\', function() {\n  // Minify and copy all JavaScript (except vendor scripts)\n  return gulp.src([\'client/js/**/*.js\', \'!client/js/vendor/**\'])\n    .pipe(uglify())\n    .pipe(gulp.dest(\'build/js\'));\n});\n\n// Copy all static images\ngulp.task(\'images\', function() {\n return gulp.src(\'client/img/**\')\n    // Pass in options to the task\n    .pipe(imagemin({optimizationLevel: 5}))\n    .pipe(gulp.dest(\'build/img\'));\n});\n\n// The default task (called when you run `gulp`)\ngulp.task(\'default\', function() {\n  gulp.run(\'scripts\', \'images\');\n\n  // Watch files and run tasks if they change\n  gulp.watch(\'client/js/**\', function() {\n    gulp.run(\'scripts\');\n  });\n\n  gulp.watch(\'client/img/**\', function() {\n    gulp.run(\'images\');\n  });\n});\n```\n\n\n## gulp CLI\n\n### Tasks\n\nTasks can be executed by running `gulp <task> <othertask>`. Just running `gulp` will execute the task you registered called `default`. If there is no `default` task gulp will error.\n\n### Compilers\n\nYou can use any language you want for your gulpfile. You will have to specify the language module name so the CLI can load it (and its associated extensions) before attempting to find your gulpfile. Make sure you have this module installed accessible by the folder you are running the CLI in.\n\nExample:\n\n```\ngulp dosomething --require coffee-script\n```\n\n\n[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/wearefractal/gulp/trend.png)](https://bitdeli.com/free "Bitdeli Badge")\n\n[npm-url]: https://npmjs.org/package/gulp\n[npm-image]: https://badge.fury.io/js/gulp.png\n[travis-url]: https://travis-ci.org/gulpjs/gulp\n[travis-image]: https://travis-ci.org/gulpjs/gulp.png?branch=master\n[coveralls-url]: https://coveralls.io/r/gulpjs/gulp\n[coveralls-image]: https://coveralls.io/repos/gulpjs/gulp/badge.png\n[depstat-url]: https://david-dm.org/gulpjs/gulp\n[depstat-image]: https://david-dm.org/gulpjs/gulp.png\n',
+1037 silly resolved     readmeFilename: 'README.md',
+1037 silly resolved     _id: 'gulp@3.4.0',
+1037 silly resolved     dist: { shasum: 'e5432676ba128ed641b96c3c860bba662e5961c2' },
+1037 silly resolved     _from: 'gulp@',
+1037 silly resolved     _resolved: 'https://registry.npmjs.org/gulp/-/gulp-3.4.0.tgz' },
+1037 silly resolved   { name: 'ionic',
+1037 silly resolved     version: '1.0.0-beta.1',
+1037 silly resolved     preferGlobal: true,
+1037 silly resolved     description: 'A tool for creating and building Ionic Framework mobile apps.',
+1037 silly resolved     homepage: 'http://ionicframework.com/',
+1037 silly resolved     bin: { ionic: 'bin/ionic' },
+1037 silly resolved     keywords:
+1037 silly resolved      [ 'ionic',
+1037 silly resolved        'ionic framework',
+1037 silly resolved        'mobile',
+1037 silly resolved        'html5',
+1037 silly resolved        'cordova',
+1037 silly resolved        'phonegap' ],
+1037 silly resolved     repository:
+1037 silly resolved      { type: 'git',
+1037 silly resolved        url: 'https://github.com/driftyco/ionic-cli.git' },
+1037 silly resolved     author: { name: 'Max Lynch', email: 'max@drifty.com' },
+1037 silly resolved     license: 'MIT',
+1037 silly resolved     dependencies:
+1037 silly resolved      { archiver: '0.5.1',
+1037 silly resolved        'event-stream': '3.0.x',
+1037 silly resolved        'form-data': '~0.1.0',
+1037 silly resolved        ncp: '0.4.2',
+1037 silly resolved        optimist: '0.6.0',
+1037 silly resolved        prompt: '0.2.12',
+1037 silly resolved        request: '2.27.0',
+1037 silly resolved        shelljs: '0.2.6',
+1037 silly resolved        unzip: '0.1.9',
+1037 silly resolved        q: '^1.0.1',
+1037 silly resolved        colors: '^0.6.2' },
+1037 silly resolved     readme: 'Ionic-Cli\n=========\n\nThe Ionic Framework command line utility makes it easy to start, build, run, and emulate [Ionic](http://ionicframework.com/) apps. In the future, it will also have support for our mobile development services and tools that make Ionic even more powerful.\n\n## Installing\n\n```bash\n$ sudo npm install -g ionic\n```\n\n## Starting an Ionic App\n\n```bash\n$ ionic start myApp\n```\n\n## Adding a platform target\n\n```bash\n$ ionic platform ios android\n```\n\n## Building your app\n\n```bash\n$ ionic build ios\n```\n\n## Emulating your app\n\n```bash\n$ ionic emulate ios\n```\n\n## Running your app\n\n```bash\n$ ionic run ios\n```\n\nIonic uses Cordova underneath, so you can also substitute Cordova commands to prepare/build/emulate/run, or to add additional plugins.\n\nNote: we occasionally anonymous usage statistics to the Ionic team to make the tool better.\n',
+1037 silly resolved     readmeFilename: 'README.md',
+1037 silly resolved     _id: 'ionic@1.0.0-beta.1',
+1037 silly resolved     dist: { shasum: '3beba06b619089cc07343298204554bc826e3a9a' },
+1037 silly resolved     _from: 'ionic@',
+1037 silly resolved     _resolved: 'https://registry.npmjs.org/ionic/-/ionic-1.0.0-beta.1.tgz' } ]
+1038 info install cordova@2.8.15 into /usr/local/lib
+1039 info install gulp@3.4.0 into /usr/local/lib
+1040 info install ionic@1.0.0-beta.1 into /usr/local/lib
+1041 info installOne cordova@2.8.15
+1042 warn engine cordova@2.8.15: wanted: {"node":">=0.9.9"} (current: {"node":"v0.8.22","npm":"1.2.14"})
+1043 info installOne gulp@3.4.0
+1044 warn engine gulp@3.4.0: wanted: {"node":">= 0.9"} (current: {"node":"v0.8.22","npm":"1.2.14"})
+1045 info installOne ionic@1.0.0-beta.1
+1046 verbose from cache /Users/zsheffer/.npm/gulp/3.4.0/package/package.json
+1047 verbose from cache /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package/package.json
+1048 verbose from cache /Users/zsheffer/.npm/cordova/2.8.15/package/package.json
+1049 info /usr/local/lib/node_modules/gulp unbuild
+1050 verbose read json /usr/local/lib/node_modules/gulp/package.json
+1051 info /usr/local/lib/node_modules/ionic unbuild
+1052 verbose read json /usr/local/lib/node_modules/ionic/package.json
+1053 info /usr/local/lib/node_modules/cordova unbuild
+1054 verbose read json /usr/local/lib/node_modules/cordova/package.json
+1055 verbose tar unpack /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+1056 verbose tar unpack /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+1057 silly lockFile 709d00e5-usr-local-lib-node-modules-gulp /usr/local/lib/node_modules/gulp
+1058 verbose lock /usr/local/lib/node_modules/gulp /Users/zsheffer/.npm/709d00e5-usr-local-lib-node-modules-gulp.lock
+1059 silly lockFile 45489655-effer-npm-gulp-3-4-0-package-tgz /Users/zsheffer/.npm/gulp/3.4.0/package.tgz
+1060 verbose lock /Users/zsheffer/.npm/gulp/3.4.0/package.tgz /Users/zsheffer/.npm/45489655-effer-npm-gulp-3-4-0-package-tgz.lock
+1061 silly lockFile 61c0cd50-usr-local-lib-node-modules-ionic /usr/local/lib/node_modules/ionic
+1062 verbose lock /usr/local/lib/node_modules/ionic /Users/zsheffer/.npm/61c0cd50-usr-local-lib-node-modules-ionic.lock
+1063 silly lockFile dd3e6bfe-m-ionic-1-0-0-beta-1-package-tgz /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz
+1064 verbose lock /Users/zsheffer/.npm/ionic/1.0.0-beta.1/package.tgz /Users/zsheffer/.npm/dd3e6bfe-m-ionic-1-0-0-beta-1-package-tgz.lock
+1065 info preuninstall cordova@2.8.15
+1066 silly gunzTarPerm modes [ '755', '644' ]
+1067 silly gunzTarPerm modes [ '755', '644' ]
+1068 info uninstall cordova@2.8.15
+1069 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild cordova@2.8.15
+1070 verbose /usr/local/bin,[object Object] binRoot
+1071 info postuninstall cordova@2.8.15
+1072 silly gunzTarPerm extractEntry package.json
+1073 silly gunzTarPerm extractEntry package.json
+1074 silly gunzTarPerm extractEntry .npmignore
+1075 silly gunzTarPerm extractEntry README.md
+1076 silly gunzTarPerm extractEntry .npmignore
+1077 silly gunzTarPerm extractEntry README.md
+1078 info /usr/local/lib/node_modules/cordova unbuild
+1079 verbose read json /usr/local/lib/node_modules/cordova/package.json
+1080 info preuninstall cordova@2.8.15
+1081 info uninstall cordova@2.8.15
+1082 silly gunzTarPerm extractEntry LICENSE
+1083 silly gunzTarPerm extractEntry .gitattributes
+1084 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild cordova@2.8.15
+1085 verbose /usr/local/bin,[object Object] binRoot
+1086 silly gunzTarPerm extractEntry LICENSE
+1087 silly gunzTarPerm extractEntry gulpfile.js
+1088 info postuninstall cordova@2.8.15
+1089 silly gunzTarPerm extractEntry bin/ionic
+1090 silly gunzTarPerm extractEntry bin/testApp/package.json
+1091 error error rolling back Error: EACCES, unlink '/usr/local/lib/node_modules/cordova/.npmignore'
+1091 error error rolling back  cordova@2.8.15 { [Error: EACCES, unlink '/usr/local/lib/node_modules/cordova/.npmignore']
+1091 error error rolling back   errno: 3,
+1091 error error rolling back   code: 'EACCES',
+1091 error error rolling back   path: '/usr/local/lib/node_modules/cordova/.npmignore' }
+1092 error Error: EACCES, unlink '/usr/local/lib/node_modules/cordova/.npmignore'
+1092 error  { [Error: EACCES, unlink '/usr/local/lib/node_modules/cordova/.npmignore']
+1092 error   errno: 3,
+1092 error   code: 'EACCES',
+1092 error   path: '/usr/local/lib/node_modules/cordova/.npmignore' }
+1093 error Please try running this command again as root/Administrator.
+1094 error System Darwin 12.5.0
+1095 error command "node" "/usr/local/bin/npm" "install" "-g" "cordova" "ionic" "gulp"
+1096 error cwd /Users/zsheffer/Dropbox/InvestmentCompany/Website/samurai-gui-mobile/mobileapp
+1097 error node -v v0.8.22
+1098 error npm -v 1.2.14
+1099 error path /usr/local/lib/node_modules/cordova/.npmignore
+1100 error code EACCES
+1101 error errno 3
+1102 error stack Error: EACCES, unlink '/usr/local/lib/node_modules/cordova/.npmignore'
+1103 verbose exit [ 3, true ]

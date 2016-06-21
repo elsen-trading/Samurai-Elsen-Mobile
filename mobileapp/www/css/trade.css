@@ -1,0 +1,229 @@
+/*
+	==========================================================
+	==========================================================
+	== TRADE
+*/
+
+#state-trade #trade-chart {
+	width: 100%;
+	padding: 0px;
+}
+
+
+#state-trade .holdingName {
+	line-height: 16px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+#state-trade .holdingName .ticker {
+	font-size: 16px;
+	font-family: 'open-bold';
+}
+
+#state-trade .holdingName .subtext {
+	padding-left: 3px;
+	font-size: 9px;
+	line-height: 10px;
+	color:rgb(122,123,127);
+	text-align:right;	
+}
+
+#state-trade #timeUpdated {
+	font-size:8px;
+	color:rgb(122,123,127);
+	text-align: right;
+}
+
+#state-trade .stock-attr {
+	background-color:rgb(238,238,237);
+	border-color:rgb(208,209,214);
+	border-width:1px;
+	/* Firefox v1.0+ */
+	-moz-border-radius:1px;
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-border-radius:1px;
+	/* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+	border-radius:1px;
+	border-style:solid;
+	
+	padding-right: 13px;
+	
+	font-size:15px;
+	line-height: 12px;
+	font-weight: bold;
+	color:rgb(107,107,109);
+	text-align:right;
+	font-family: 'Lato', sans-serif;
+}
+
+#state-trade .stock-attr .subtext {
+	font-size:8px;
+	color:rgb(122,123,127);
+	text-align:right;
+	display: block;
+}
+
+#state-trade .trade-attr .subtext {
+	font-size:8px;
+	color:rgb(93,94,95);
+	display: block;
+}
+
+#state-trade #trade-shares {
+	width: 70px;
+	font-size:16px;
+	min-height: 0px;
+	color:rgb(107,107,109);
+	text-align:right;
+	line-height: 16px;
+	padding: 6px;
+	padding-right: 3px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	
+	-webkit-appearance: none;	/* clear formatting that the device may do */
+	border: 1px solid #DDDDDD;
+	border-radius: 3px;
+}
+
+
+#trade-type {
+}
+
+#state-trade .ui-slider-label {
+	color:rgb(107,107,109);
+	font-weight: 900;
+	font-family: 'Lato', sans-serif;
+}
+
+#state-trade #trade-value {
+	font-size: 18px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+	color:rgb(107,107,108);
+	line-height: 40px; /* hide this line if trade-value-sub is visible */
+}
+
+#state-trade #trade-value-sub-1 {
+	position: relative;
+	top: -2px;
+	font-size: 16px;
+}
+
+#state-trade #trade-value-sub-2 {
+	position: relative;
+	top: -6px;
+	font-size: 12px;
+}
+
+
+#state-trade #brokerage-name-container {
+	font-size:8px;
+	color:rgb(122,123,127);
+	text-align:right;
+}
+
+#state-trade #brokerage-name-container.paper {
+	background-color: rgb(239,163,58);
+	font-weight: 600;
+	color: rgb(255,255,255);
+	text-align: center;
+	font-size: 8px;
+	height: 26px;
+	line-height: 26px;
+}
+
+
+#state-trade #brokerage-name-container .brokerage-logo {
+	width: 120px;
+	height: 25px;
+	background-size: 120px 25px;
+}
+
+#state-trade #brokerage-name-container .brokerage-logo.tradier {
+	background-image: url("../img/brokerage/tradier_240x50.png");
+}
+
+#state-trade #brokerage-name {
+	color: rgb(58, 161, 242);
+	display: block;
+}
+
+
+
+/* http://proto.io/freebies/onoff/ */
+.onoffswitch {
+    position: relative; width: 80px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+    display: none;
+}
+
+.onoffswitch-label {
+    display: block; overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #DDDDDD;
+    border-radius: 3px;
+}
+
+.onoffswitch-inner {
+    width: 200%; margin-left: -100%;
+    -moz-transition: margin 0.15s ease-in 0s; -webkit-transition: margin 0.15s ease-in 0s;
+    -o-transition: margin 0.15s ease-in 0s; transition: margin 0.15s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 16px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+    content: "Buy";
+    padding-left: 10px;
+	color:rgb(107,107,109);
+    background-color: #FCFCFC;
+	color:rgb(107,107,109);
+	font-weight: 900;
+	font-family: 'Lato', sans-serif;
+}
+
+.onoffswitch-inner:after {
+    content: "Sell";
+	color:rgb(107,107,109);
+    background-color: #FCFCFC;
+	color:rgb(107,107,109);
+	font-weight: 900;
+	font-family: 'Lato', sans-serif;
+    padding-right: 10px;
+    text-align: right;
+}
+
+.onoffswitch-switch {
+    width: 25px;
+    margin: 4px;
+    background: #96BF48;
+    border-radius: 2px;
+    position: absolute; top: 0; bottom: 0; right: 46px;
+    -moz-transition: all 0.15s ease-in 0s; -webkit-transition: all 0.15s ease-in 0s;
+    -o-transition: all 0.15s ease-in 0s; transition: all 0.15s ease-in 0s; 
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+
+/*
+	== // trade
+	==========================================================
+	==========================================================
+*/

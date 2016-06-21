@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html ng-app="elsen">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
+		<title>Elsen Mobile App</title>
+		
+		<script src="env.js"></script>
+		
+		<!-- ionic css -->
+		<link href="lib/css/ionic.css" rel="stylesheet">
+		
+		<!-- bootstrap -->
+		<link href="libraries/bootstrap/css/bootstrap.css" rel="stylesheet">
+		<link href="css/bootstrap-overrides.css" type="text/css" rel="stylesheet">
+		
+		<!-- libraries -->
+		<link href="libraries/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+		<link href="libraries/jquery.mobile-1.4.1/jquery.mobile-1.4.1.css" type="text/css" rel="stylesheet">
+		<!--
+			<script src="libraries/jquery.mobile-1.4.1/jquery.mobile-1.4.1.js"></script>
+		-->
+		
+		<!-- app styles -->
+		<link href="css/layout.css" rel="stylesheet">
+		<link href="css/app.css" rel="stylesheet">
+		<link href="css/walkthrough.css" rel="stylesheet">
+		<link href="css/login-forgot.css" rel="stylesheet">
+		<link href="css/portfolio.css" rel="stylesheet">
+		<link href="css/notifications.css" rel="stylesheet">
+		<link href="css/trade.css" rel="stylesheet">
+		<link href="css/place-trade-button.css" rel="stylesheet">
+		<link href="css/activity.css" rel="stylesheet">
+		
+		<!-- ionic/angularjs scripts -->
+		<script src="lib/js/ionic.bundle.min.js"></script>
+		<script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+		
+		<!-- cordova script (this will be a 404 during development) -->
+		<script src="cordova.js"></script>
+		
+		<!-- primary scripts for app -->
+		<script src="js/angular/app.js"></script>
+		<script src="js/angular/services.js"></script>
+		<script src="js/angular/controllers.js"></script>
+		<script src="js/angular/directives.js"></script>
+		<script src="js/angular/filters.js"></script>
+		
+		<!-- supplementary scripts -->
+		<script src="js/angular/highcharts-ng-0.0.6.js"></script>				<!-- highcharts angular directive - https://github.com/pablojim/highcharts-ng -->
+		<script src="libraries/jquery/jquery-2.1.0.min.js"></script>			<!-- little jquery, just for fun -->
+		<script src="http://code.highcharts.com/stock/highstock.js"></script>
+		
+		<!--
+			// we use moment for handling the time-ago fields
+			//	by tying it with angular-moment the values will auto increment
+			//	an alternative to jquery.timeago -- moment has no dependencies
+			https://github.com/urish/angular-moment
+			http://momentjs.com/docs/
+		-->
+		<script src="libraries/moment/moment.js"></script>
+		<script src="libraries/angular-moment/angular-moment.js"></script>
+		<!-- <script src="libraries/angular-timer/dist/angular-timer.js"></script> -->
+		<!-- <script src="js/jquery.timeago.js"></script> -->
+		<script type="text/javascript" src="js/PushNotification.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,300italic' rel='stylesheet' type='text/css'>
+		
+	</head>
+	
+	<!--
+		'elsen' is the name of this angular module (js/app.js)
+	-->
+		
+	<body animation="slide-left-right-ios7" onload="onLoad()">
+	
+		<!-- 
+			The nav bar that will be updated as we navigate between views
+			Additional attributes set its look, ion-nav-bar animation and icons
+			Icons provided by Ionicons: http://ionicons.com/
+		-->
+				
+		<ion-nav-bar id="header-container" class="slide-left-right">
+			<ion-nav-back-button class="button-icon button-clear ion-ios7-arrow-back"></ion-nav-back-button>
+		</ion-nav-bar>
+				
+		<!--
+			The views will be rendered in the <ion-nav-view> directive below
+			Templates are in the /templates folder (but you could also
+			have templates inline in this html file if you'd like).
+		-->
+		<ion-nav-view animation="slide-left-right"></ion-nav-view>
+		
+		<script type="text/javascript">			
+		
+			ionic.Platform.ready(function () {
+				console.log( 'platform: ready to go!' );
+				window.localStorage.setItem( "badge", 0 );	// start the count at 0 ... our notification quantity controller will kick in right away
+			});
+			
+			var pushNotification;
+			
+			// Wait for PhoneGap to load
+			document.addEventListener("deviceready", onDeviceReady, false);
+			
+			// PhoneGap is ready
+			function onDeviceReady() {
+			
+				window.localStorage.clear();	// localStorage is now empty				
+				
+				//
+				// $("#app-status-ul").append('<li>deviceready event received</li>');
+				// console.log( 'deviceready event received' );
+				// 
+				
+				document.addEventListener("backbutton", function(e) {
+					
+					//
+					// $("#app-status-ul").append('<li>backbutton event received</li>');
+					// console.log( 'backbutton event received' );
+					// 
+					
+					/*
+						if( $("#home").length > 0) {
+							// call this to get a new token each time. don't call it to reuse existing token.
+							//pushNotification.unregister(successHandler, errorHandler);
+							e.preventDefault();
+							navigator.app.exitApp();
+						} else {
+							navigator.app.backHistory();
+						}
+					*/
+					
+					navigator.app.backHistory();
+
+				}, false);
+				
+				try {
+					pushNotification = window.plugins.pushNotification;
+					if (device.platform == 'android' || device.platform == 'Android') {
+						
+						//
+						// $("#app-status-ul").append('<li>registering android</li>');
+						// console.log( 'registering android' );
+						// 
+						
+						pushNotification.register(successHandler, errorHandler, {"senderID":"661780372179","ecb":"onNotificationGCM"});		// required!
+					} else {
+						
+						//
+						// $("#app-status-ul").append('<li>registering iOS</li>');
+						// console.log( 'registering iOS' );
+						// 
+						
+						pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
+					}
+				} catch(err) { 
+					txt="There was an error on this page.\n\n"; 
+					txt+="Error description: " + err.message + "\n\n"; 
+					alert(txt); 
+				}
+			}
+			
+			// handle APNS notifications for iOS
+			function onNotificationAPN(e) {
+							
+				if (e.alert) {
+				
+					//
+					//$("#app-status-ul").append('<li>push-notification: ' + e.alert + '</li>');
+					// console.log( 'push-notification: ' + e.alert );
+					// 
+					
+					navigator.notification.alert(e.alert);
+					
+				}
+				
+				if (e.sound) {
+					var snd = new Media(e.sound);
+					snd.play();
+				}
+				
+				if (e.badge) {
+					// console.log( 'badge: ' + e.badge )
+					window.localStorage.setItem( "badge", e.badge );
+					pushNotification.setApplicationIconBadgeNumber(successHandler, e.badge);
+				}
+				
+			}
+			
+			// handle GCM notifications for Android
+			function onNotificationGCM(e) {
+				$("#app-status-ul").append('<li>EVENT -> RECEIVED:' + e.event + '</li>');
+				
+				navigator.notification.vibrate( 1500 );		// Vibrate for 1.5s
+				
+				switch( e.event ) {
+					case 'registered':
+						if ( e.regid.length > 0 ) {
+							$("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
+							// Your GCM push server needs to know the regID before it can push to this device
+							// here is where you might want to send it the regID for later use.
+							console.log("regID = " + e.regid);
+						} 
+					break;
+					
+					case 'message':
+						// if this flag is set, this notification happened while we were in the foreground.
+						// you might want to play a sound to get the user's attention, throw up a dialog, etc.
+						if (e.foreground) {
+						$("#app-status-ul").append('<li>--INLINE NOTIFICATION--' + '</li>');
+						
+							// if the notification contains a soundname, play it.
+							var my_media = new Media("/android_asset/www/"+e.soundname);
+							my_media.play();
+						} else {	// otherwise we were launched because the user touched a notification in the notification tray.
+							if (e.coldstart)
+								$("#app-status-ul").append('<li>--COLDSTART NOTIFICATION--' + '</li>');
+							else
+								$("#app-status-ul").append('<li>--BACKGROUND NOTIFICATION--' + '</li>');
+						}
+					
+						$("#app-status-ul").append('<li>MESSAGE -> MSG: ' + e.payload.message + '</li>');
+						$("#app-status-ul").append('<li>MESSAGE -> MSGCNT: ' + e.payload.msgcnt + '</li>');
+					break;
+					
+					case 'error':
+						$("#app-status-ul").append('<li>ERROR -> MSG:' + e.msg + '</li>');
+					break;
+					
+					default:
+						$("#app-status-ul").append('<li>EVENT -> Unknown, an event was received and we do not know what it is</li>');
+					break;
+				}
+			}
+			
+			function tokenHandler (result) {
+				// $("#app-status-ul").append('<li>token: '+ result +'</li>');
+				// Your iOS push server needs to know the token before it can push to this device
+				// here is where you might want to send it the token for later use.
+				
+				// since we need to associate the users phone token and account credentials we need them to login first
+				//	then we can associate the values
+				//	so save phone token -> login == true -> send phone token with login
+				window.localStorage.setItem( 'iosDeviceToken', result );
+			}
+			
+			function successHandler (result) {
+			
+				//
+				// $("#app-status-ul").append('<li>success:'+ result +'</li>');
+				// console.log( 'success: ' + result );
+				// 
+			
+			}
+			
+			function errorHandler (error) {
+			
+				//
+				// $("#app-status-ul").append('<li>error:'+ error +'</li>');
+				// console.log( 'error: ' + error );
+				// 
+				
+			}
+			
+			document.addEventListener('deviceready', onDeviceReady, true);
+		
+		</script>
+		
+		<script type="text/javascript">
+		    function onLoad() {
+		        document.addEventListener("deviceready", onDeviceReady, false);
+		        document.addEventListener("resume", onResume, false);
+		        document.addEventListener("pause", onPause, false);
+		    }
+		    function onDeviceReady() {
+		    	Localytics.init( LOCALYTICS_APP_ID );
+		        Localytics.setHttpsEnabled(true);
+		        Localytics.resume();                
+		        Localytics.upload();
+		    }
+		    function onResume() {
+		        Localytics.resume();
+		        Localytics.upload();
+		    }
+		    function onPause() {
+		        Localytics.close();
+		        Localytics.upload();
+		    }
+		</script>
+		
+	</body>
+</html>

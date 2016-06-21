@@ -1,0 +1,540 @@
+/*
+	==========================================================
+	==========================================================
+	== LOGIN/FORGOT
+*/
+
+#state-walkthrough {
+	background-color: rgb(148,186,101);
+}
+
+#state-forgot,
+#state-signup {
+	background-color:rgb(248,248,248);
+}
+
+#state-walkthrough .scroll,
+#state-forgot .scroll,
+#state-signuo .scroll {
+	width: 100%;
+	height: 100%;
+}
+
+#state-walkthrough .logo,
+#state-forgot .logo,
+#state-signup .logo {
+	width: 69px;
+	height: 75px;
+	background-size: 69px 75px;
+	display: inline-block;
+	background-image: url( '../img/elsen-mobile.png' );
+}
+
+/*
+	== // login/forgot
+	==========================================================
+	==========================================================
+*/
+
+
+/*
+	==========================================================
+	==========================================================
+	== LOGIN SPECIFIC
+*/
+
+#state-walkthrough .welcome-title {
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 100%;
+	color:rgb(146,184,101);
+	text-align:center;
+	padding: 50px 35px 10px 35px;
+}
+
+#state-walkthrough .welcome-message {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 100%;
+	color:rgb(172,172,172);
+	text-align:center;
+}
+
+#state-walkthrough .social {
+	width: 56px;
+	height: 56px;
+	background-size: 56px 56px;
+	display: inline-block;
+	margin: 15px 5px 5px 5px;
+}
+
+#state-walkthrough #social-login-container {
+/* 	padding-top: 40px; */
+	padding-bottom: 5px;
+}
+
+#login-container {
+	position: fixed;
+	width: 100%;
+	bottom: 65px;
+}
+
+#state-walkthrough .social.facebook {
+	background-image: url( '../img/social_media/facebook.png' );
+}
+
+#state-walkthrough .social.google {
+	background-image: url( '../img/social_media/google.png' );
+}
+
+#state-walkthrough .social.linkedin {
+	background-image: url( '../img/social_media/linkedin.png' );
+}
+
+#state-walkthrough .social.twitter {
+	background-image: url( '../img/social_media/twitter.png' );
+}
+
+#state-walkthrough #manual-login-container {
+/*
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+*/
+	padding-bottom: 45px;
+}
+
+#state-walkthrough #login-form {
+	border-top: solid 1px rgb(229,239,218);
+	padding-top: 8px;
+}
+
+#state-walkthrough #login-form > * {
+	display: block;
+	margin: 5px auto 5px auto;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+#state-walkthrough #login-form .alert {
+	margin-bottom: 13px;
+	margin-top: -3px;
+}
+
+#state-walkthrough #login-form input {
+	-webkit-appearance: none;
+	
+	font-family:"Roboto";
+	color:rgb(129, 129, 129);
+
+	background-color:rgb(255,255,255);
+	height:45px;
+	border-color:rgb(221,221,221);
+	border-width:1px;/* Firefox v1.0+ */
+	-moz-border-radius:2px;/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-border-radius:2px;/* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+	border-radius:2px;
+	border-style:solid;
+	
+	padding-left: 13px;
+	padding-right: 35px;
+	font-size:18px;
+	font-weight: 400;
+}
+
+#state-walkthrough #login-form input::-webkit-input-placeholder {
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+
+#state-walkthrough #login-form input:-moz-placeholder { /* Firefox 18- */
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+
+#state-walkthrough #login-form input::-moz-placeholder {  /* Firefox 19+ */
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+#state-walkthrough #login-form input:-ms-input-placeholder {  
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+
+#state-walkthrough .input-user-icon:before,
+#state-walkthrough .input-password-icon:before {
+	height: 45px;
+	color:rgb(206,206,206);
+	width:20px;
+	font-size: 20px;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    position: absolute;
+    font-family:'FontAwesome';
+    font-weight: 200;
+    pointer-events: none;
+    right: 20px;
+}  
+
+#state-walkthrough .input-user-icon:before {
+    content:"\f007";
+}  
+
+#state-walkthrough .input-password-icon:before {
+    content:"\f023";
+}  
+
+
+#state-walkthrough #login-form .login {
+	background-color:rgb(148,186,101);
+	width: 100%;
+	line-height: 45px;
+	height: 45px;
+	/* Firefox v1.0+ */
+	-moz-border-radius:2px;
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-border-radius:2px;
+	/* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+	border-radius:2px;
+	font-size:18px;
+	font-weight:400;
+	color:rgb(255,255,255);
+	text-align:center;
+}
+
+#state-walkthrough #login-form .login:active {
+	background-color:rgb(111, 139, 75);
+}
+
+#state-walkthrough .forgot{
+	margin-top: 20px;
+	font-size:12px;
+	font-weight: 300;
+	color:rgb(122,123,127);
+	text-align:center;
+}
+
+/*
+	== // login specific
+	==========================================================
+	==========================================================
+*/
+
+/*
+	==========================================================
+	==========================================================
+	== FORGOT SPECIFIC
+*/
+
+#state-forgot #back {
+	position: fixed;
+	z-index: 1000;
+	top: 50px;
+	left: 50px;
+	color:rgb(208,209,214);
+}
+
+#state-forgot .title {
+	font-size:13px;
+	color:rgb(126,145,170);
+	text-align:center;
+}
+
+
+#state-forgot #forgot-container {
+	position: absolute;
+	width: 100%;
+	bottom: 80px;
+}
+
+#state-forgot #forgot-form {
+	padding-top: 15px;
+}
+
+#state-forgot #forgot-form > * {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+#state-forgot #forgot-form .alert {
+	margin-bottom: 13px;
+	margin-top: -3px;
+}
+
+
+#state-forgot #forgot-form input {
+	-webkit-appearance: none;
+	
+	font-family:"Roboto";
+	color:rgb(129, 129, 129);
+
+	background-color:rgb(255,255,255);
+	height:45px;
+	border-color:rgb(221,221,221);
+	border-width:1px;/* Firefox v1.0+ */
+	-moz-border-radius:2px;/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-border-radius:2px;/* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+	border-radius:2px;
+	border-style:solid;
+	
+	padding-left: 13px;
+	padding-right: 35px;
+	font-size:18px;
+	font-weight: 400;
+}
+
+#state-forgot #forgot-form input::-webkit-input-placeholder {
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+
+#state-forgot #forgot-form input:-moz-placeholder { /* Firefox 18- */
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+
+#state-forgot #forgot-form input::-moz-placeholder {  /* Firefox 19+ */
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+#state-forgot #forgot-form input:-ms-input-placeholder {  
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+
+#state-forgot .input-user-icon:before {
+	height: 45px;
+	color:rgb(206,206,206);
+	width:20px;
+	font-size: 20px;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    position: absolute;
+    font-family:'FontAwesome';
+    font-weight: 200;
+    pointer-events: none;
+    right: 20px;
+}  
+
+#state-forgot .input-user-icon:before {
+    content:"\f007";
+}
+
+
+#state-forgot #forgot-form .forgot {
+	background-color:rgb(148,186,101);
+	width: 100%;
+	line-height: 45px;
+	height: 45px;
+	/* Firefox v1.0+ */
+	-moz-border-radius:2px;
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-border-radius:2px;
+	/* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+	border-radius:2px;
+	font-size:18px;
+	font-weight:400;
+	color:rgb(255,255,255);
+	text-align:center;
+}
+
+#state-forgot .forgot{
+	font-size:9px;
+	line-height:120%;
+	color:rgb(122,123,127);
+	text-align:center;
+}
+
+/*
+	== // forgot specific
+	==========================================================
+	==========================================================
+*/
+
+/*
+	==========================================================
+	==========================================================
+	== SIGNUP SPECIFIC
+*/
+
+#state-signup #back {
+	position: fixed;
+	z-index: 1000;
+	top: 50px;
+	left: 50px;
+	color:rgb(208,209,214);
+}
+
+#state-signup .title {
+	font-size:16px;
+	color:rgb(126,145,170);
+	text-align:center;
+	
+	padding: 6px 40px;
+	margin: -6px 0px;
+	background-color: rgb(248,248,248);
+}
+
+
+#state-signup #signup-container {
+	position: absolute;
+	width: 100%;
+	bottom: 80px;
+}
+
+#state-signup #signup-form {
+	padding-top: 15px;
+}
+
+#state-signup #signup-form > * {
+	display: block;
+	margin: 5px auto 5px auto;
+}
+
+#state-signup #signup-form .alert {
+	margin-bottom: 13px;
+	margin-top: -3px;
+}
+
+
+#state-signup #signup-form input {
+	-webkit-appearance: none;
+	
+	font-family:"Roboto";
+	color:rgb(129, 129, 129);
+
+	background-color:rgb(255,255,255);
+	height:45px;
+	border-color:rgb(221,221,221);
+	border-width:1px;/* Firefox v1.0+ */
+	-moz-border-radius:2px;/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-border-radius:2px;/* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+	border-radius:2px;
+	border-style:solid;
+	
+	padding-left: 13px;
+	padding-right: 35px;
+	font-size:18px;
+	font-weight: 400;
+}
+
+#state-signup #signup-form input::-webkit-input-placeholder {
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+
+#state-signup #signup-form input:-moz-placeholder { /* Firefox 18- */
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+
+#state-signup #signup-form input::-moz-placeholder {  /* Firefox 19+ */
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+#state-signup #signup-form input:-ms-input-placeholder {  
+	font-size:18px;
+	color:rgb(172,172,172);
+	text-align:left;
+	line-height: 26px;
+	font-weight: 300;
+	font-family:"Roboto";
+}
+
+#state-signup .input-mail-icon:before,
+#state-signup .input-password-icon:before,
+#state-signup .input-user-icon:before {
+	height: 45px;
+	color:rgb(206,206,206);
+	width:20px;
+	font-size: 20px;
+    display:-webkit-box;
+    -webkit-box-pack:center;
+    -webkit-box-align:center;
+    position: absolute;
+    font-family:'FontAwesome';
+    font-weight: 200;
+    pointer-events: none;
+    right: 20px;
+}  
+
+#state-signup .input-mail-icon:before { content:"\f0e0"; }
+#state-signup .input-password-icon:before { content:"\f023"; }
+#state-signup .input-user-icon:before { content:"\f007"; }
+
+#state-signup #signup-form .signup {
+	background-color:rgb(148,186,101);
+	width: 100%;
+	line-height: 45px;
+	height: 45px;
+	/* Firefox v1.0+ */
+	-moz-border-radius:2px;
+	/* Safari v3.0+ and by Chrome v0.2+ */
+	-webkit-border-radius:2px;
+	/* Firefox v4.0+ , Safari v5.0+ , Chrome v4.0+ , Opera v10.5+  and by IE v9.0+ */
+	border-radius:2px;
+	font-size:18px;
+	font-weight:400;
+	color:rgb(255,255,255);
+	text-align:center;
+}
+
+#state-signup .signup{
+	font-size:9px;
+	line-height:120%;
+	color:rgb(122,123,127);
+	text-align:center;
+}
+
+/*
+	== // signup specific
+	==========================================================
+	==========================================================
+*/

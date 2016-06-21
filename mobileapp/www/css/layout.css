@@ -1,0 +1,157 @@
+/* lets define our fonts!! */
+
+/*
+	text	= open sans
+	numbers = lato
+*/
+
+/*
+	local version of this url
+	http://fonts.googleapis.com/css?family=Lato:400,700,900
+*/
+
+@import url('../font/lato.css');
+
+@font-face {
+	font-family: 'open-bold';
+	src: url('../font/OpenSans-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'open-sbold';
+	src: url('../font/OpenSans-Semibold.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'open-regular';
+	src: url('../font/OpenSans-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'open-light';
+	src: url('../font/OpenSans-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
+	font-family: 'Roboto', sans-serif;	
+}
+
+
+body {
+	font-family: 'open-regular';
+	color:rgb(83,83,83);
+} 
+.pointer,
+.link { cursor: pointer; }
+
+/*
+	gonna make the parent container relative so we can make all the inner elements absolute within it
+	may need to switch this later on
+*/
+
+.mobile-overflow {
+	-webkit-overflow-scrolling: touch;	/* allow touch scrolling in webkit browsers */
+	overflow: scroll;					/* set overflow to scroll for desktop browsers */
+	overflow-x: hidden;					/* hide scrollbar on x-axis */
+}
+
+a {text-decoration:none !important;}
+
+.f1 { font-size:38px; }
+.f2 { font-size:25px; }
+.f3 { font-size:15px; }
+.f4 { font-size:18px; }
+.f5 { font-size:14px; }
+.f6 { font-size:13px; }
+.f7 { font-size:9px; }
+
+.fwhite { color: white; }
+.fblue { color:rgb(67,133,191); }
+.fgrey, .fgray { color:rgb(93,94,95); }
+
+.negative { color:rgb(184,94,127); }
+.positive { color:rgb(150,191,70); }
+
+.fbold_o	{ font-family: 'open-bold'; }
+.fsbold_o	{ font-family: 'open-sbold'; }
+.fregular_o { font-family: 'open-regular'; }
+.flight_o	{ font-family: 'open-light'; }
+.fbold_o	{ font-family: 'open-bold'; }
+
+.tright{ text-align: right;}
+.tcenter{ text-align: center;}
+.tleft{ text-align: left;}
+
+.fregular_l {
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+}
+.fbold_l {
+	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+}
+
+.fubold_l {
+	font-family: 'Lato', sans-serif;
+	font-weight: 900;
+}
+
+.center {
+	text-align: center;
+}
+
+.left {
+	float: left;
+	text-align: left;
+}
+
+.right {
+	float: right;
+	text-align: right;
+}
+
+
+.mobile-side-spacing {
+	margin-right: 8px;
+	margin-left: 8px;
+}
+
+.xsm-right-spacer	{ margin-right: 3px; }
+.sm-right-spacer	{ margin-right: 5px; }
+.med-right-spacer { margin-right: 10px; }
+.lg-right-spacer	{ margin-right: 15px; }
+.xlg-right-spacer { margin-right: 18px; }
+.xxlg-right-spacer { margin-right: 20px; }
+
+.xsm-left-spacer	{ margin-left: 3px; }
+.sm-left-spacer	{ margin-left: 5px; }
+.med-left-spacer { margin-left: 10px; }
+.lg-left-spacer	{ margin-left: 15px; }
+.xlg-left-spacer { margin-left: 18px; }
+.xxlg-left-spacer { margin-left: 20px; }
+
+.xsm-top-spacer	{ margin-top: 3px; }
+.sm-top-spacer	{ margin-top: 5px; }
+.med-top-spacer { margin-top: 10px; }
+.lg-top-spacer	{ margin-top: 15px; }
+.xlg-top-spacer { margin-top: 18px; }
+.xxlg-top-spacer { margin-top: 20px; }
+
+.xsm-bottom-spacer	{ margin-bottom: 3px; }
+.sm-bottom-spacer	{ margin-bottom: 5px; }
+.med-bottom-spacer { margin-bottom: 10px; }
+.lg-bottom-spacer	{ margin-bottom: 15px; }
+.xlg-bottom-spacer { margin-bottom: 18px; }
+.xxlg-bottom-spacer { margin-bottom: 20px; }
+
+.gray-border-bottom,
+.grey-border-bottom {
+	border-bottom: 2px solid rgb(186,188,192);
+}
+
+
+i[class^="fa-caret-"],
+i[class*="fa-caret-"] {
+	font-size: 15px;
+	padding-right: 4px;
+}
